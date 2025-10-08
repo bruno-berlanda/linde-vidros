@@ -57,15 +57,11 @@ require_once ("includes/links.php");
         <div class="col-md-12">
         <div class="well" id="well-blue">
         	<div class="row">
-                <div class="col-md-4 col-xs-6">
+                <div class="col-md-6 col-xs-6">
                     <p class="text-muted text-center"><small><i class="fas fa-phone"></i> TELEFONE</small></p>
-                    <p class="lead text-center"><a href="tel:+554736414444">47 3641 4444</a></p>
+                    <p class="lead text-center"><a href="https://api.whatsapp.com/send?phone=554736414444">47 3641 4444</a></p>
                 </div>
-                <div class="col-md-4 col-xs-6">
-                    <p class="text-muted text-center"><small><i class="fas fa-fax"></i> FAX</small></p>
-                    <p class="lead text-center">47 3641 4400</p>
-                </div>
-                <div class="col-md-4 col-xs-12">
+                <div class="col-md-6 col-xs-6">
                     <p class="text-muted text-center"><small><i class="fas fa-envelope"></i> E-MAIL</small></p>
                      <p class="lead text-center"><a href="mailto:linde@lindevidros.com.br">linde@lindevidros.com.br</a></p>
                 </div>
