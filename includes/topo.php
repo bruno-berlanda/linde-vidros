@@ -20,7 +20,7 @@
                         	<i class="fas fa-envelope fa-lg"></i>
                         </a>
                         <span class="label label-primary hidden-xs">
-                        	<i class="fas fa-phone fa-sm"></i> <a href="tel:+554736414444" id="fone-topo">47 3641 4444</a>
+                        	<i class="fab fa-whatsapp"></i> <a href="https://api.whatsapp.com/send?phone=554736414444" id="fone-topo">47 3641 4444</a>
 						</span>
                     </div>
                 </div>

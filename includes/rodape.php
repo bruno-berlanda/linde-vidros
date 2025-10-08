@@ -36,7 +36,7 @@
                             <br>
                             Rio Negro - PR &bull; CEP 83885-302
                             </p>
-                            <p class="lead"><a href="tel:+554736414444">47 3641 4444</a></p>
+                            <p class="lead"><a href="https://api.whatsapp.com/send?phone=554736414444"><i class="fab fa-whatsapp"></i> 47 3641 4444</a></p>
                         </address>
                         
                         <address>
