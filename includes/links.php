@@ -1,6 +1,6 @@
 <?php
 $url = $_SERVER['HTTP_HOST'];
-if ($url == "127.0.0.1:8080" || $url == "127.0.0.1") {
+if ($url == "127.0.0.1:8080" || $url == "127.0.0.1" || $url == "localhost") {
 	
 	// Menu
 	$l_home 			= "index.php";
@@ -34,7 +34,7 @@ if ($url == "127.0.0.1:8080" || $url == "127.0.0.1") {
 	$l_freezer			= "tampas-freezer.php";
 	
 	// Serviços
-	$l_pelicula			= "pelicula-seguranca.php";
+	$l_pelicula		    = "pelicula-seguranca.php";
 	$l_serigrafia		= "serigrafia.php";
 	$l_lapidacao		= "lapidacao.php";
 	$l_incisao			= "incisao.php";
@@ -44,13 +44,6 @@ if ($url == "127.0.0.1:8080" || $url == "127.0.0.1") {
 	$l_ferragens		= "ferragens.php";
 	$l_aluminios		= "aluminios.php";
 	$l_idea				= "idea-glass.php";
-	
-	// Dicas
-	$l_instvidros		= "instalacao-vidros.php";
-	$l_instespelhos		= "instalacao-espelhos.php";
-	$l_fixespelhos		= "fixacao-espelhos.php";
-	$l_manuespelhos		= "manuseio-espelhos.php";
-	$l_furostemp		= "furos-tempera.php";
 	
 	// Currículo
 	$l_curcadastrar		= "curriculo-cadastrar.php";
@@ -94,7 +87,7 @@ else {
 	$l_freezer			= "tampas-freezer";
 	
 	// Serviços
-	$l_pelicula			= "pelicula-seguranca";
+	$l_pelicula		    = "pelicula-seguranca";
 	$l_serigrafia		= "serigrafia";
 	$l_lapidacao		= "lapidacao";
 	$l_incisao			= "incisao";
@@ -104,13 +97,6 @@ else {
 	$l_ferragens		= "ferragens";
 	$l_aluminios		= "aluminios";
 	$l_idea				= "idea-glass";
-	
-	// Dicas
-	$l_instvidros		= "instalacao-vidros";
-	$l_instespelhos		= "instalacao-espelhos";
-	$l_fixespelhos		= "fixacao-espelhos";
-	$l_manuespelhos		= "manuseio-espelhos";
-	$l_furostemp		= "furos-tempera";
 	
 	// Currículo
 	$l_curcadastrar		= "curriculo-cadastrar";
