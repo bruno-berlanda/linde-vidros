@@ -108,53 +108,6 @@ require_once ("includes/links.php");
                     </div>
                 </div>
             </div>
-            
-            <p id="principal"><i class="fas fa-caret-right"></i> Serviços</p>
-            
-            <div class="row">
-                <div class="col-xs-12 col-sm-4 col-md-4">
-                    <div class="thumbnail" id="img-thumb">
-                        <img src="img/pg_pelicula.jpg" alt="Película de Segurança">
-                        <div class="caption">
-                            <p id="titulo-pg">Película de Segurança</p>
-                            <p>Proteção para a família</p>
-                            <p><a href="<?php echo $l_pelicula; ?>" class="btn btn-primary btn-block" role="button" title="Película de Segurança"><i class="fas fa-link"></i> Detalhes</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-4 col-md-4">
-                    <div class="thumbnail" id="img-thumb">
-                        <img src="img/pg_serigrafia.jpg" alt="Serigrafia">
-                        <div class="caption">
-                            <p id="titulo-pg">Serigrafia</p>
-                            <p>Vidros pintados</p>
-                            <p><a href="<?php echo $l_serigrafia; ?>" class="btn btn-primary btn-block" role="button" title="Serigrafia"><i class="fas fa-link"></i> Detalhes</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-4 col-md-4">
-                    <div class="thumbnail" id="img-thumb">
-                        <img src="img/pg_lapidacao.jpg" alt="Lapidação">
-                        <div class="caption">
-                            <p id="titulo-pg">Lapidação</p>
-                            <p>Qualidade no acabamento</p>
-                            <p><a href="<?php echo $l_lapidacao; ?>" class="btn btn-primary btn-block" role="button" title="Lapidação"><i class="fas fa-link"></i> Detalhes</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="row" id="link-merlin">
-                <div class="col-xs-12">
-                    <div class="thumbnail" id="img-thumb">
-                        <a href="http://www.merlinferragens.com.br/" target="_blank" title="Merlin Ferragens" id="tooltip-merlin" rel="tooltip" data-placement="top"><img src="img/merlin.jpg" alt="Merlin Ferragens" class="img-responsive"></a>
-                        <div class="caption">
-                            <p id="titulo-pg">Merlin Ferragens</p>
-                            <p>Tudo que você precisa, com qualidade e elegância.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 </div>
