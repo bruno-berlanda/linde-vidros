@@ -9,10 +9,16 @@ Disallow: /croquis/
 Disallow: /curriculo/
 Disallow: /downloads/
 Disallow: /email/
+Disallow: /erros/
+Disallow: /experience-box/
+Disallow: /fonts/
 Disallow: /funcoes/
+Disallow: /glasscontrol/
 Disallow: /imagens/
 Disallow: /includes/
 Disallow: /js/
-Disallow: /pesquisa/
+Disallow: /phpmailer/
 Disallow: /repsys/
+Disallow: /webfonts/
 Disallow: area-restrita.php
+Sitemap: https://www.lindevidros.com.br/sitemap.xml
