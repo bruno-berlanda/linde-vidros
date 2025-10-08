@@ -61,14 +61,14 @@
                         
                         <p class="lead"><strong>Distribuidora Autorizada</strong></p>
                         
-                        <p><a href="http://www.vidroshabitat.com.br" target="_blank" title="Vidros Habitat"><img src="img/rodape_habitat_10.png" alt="Vidros Habitat" class="img-responsive"></a></p>
+                        <p><a href="http://www.vidroshabitat.com.br" target="_blank" title="Vidros Habitat"><img src="img/rodape_habitat.png" alt="Vidros Habitat" class="img-responsive"></a></p>
                         
                         <br>
                         <br>
                         
                         <p class="lead"><strong>Aceitamos os Cartões</strong></p>
                         
-                        <p><a id="tooltip-cartoes" rel="tooltip" data-placement="top" title="Visa | Mastercard | Cabal | BNDES"><img src="img/cartoes.png" alt="Cartões" class="img-responsive"></a></p>
+                        <p><a id="tooltip-cartoes" rel="tooltip" data-placement="top" title="Visa | Mastercard | BNDES"><img src="img/rodape_cartoes.png" alt="Cartões" class="img-responsive"></a></p>
                     </div>
                 </div>
             </div>
