@@ -54,9 +54,6 @@
                         </a>
                         <a href="https://www.linkedin.com/company/linde-vidros/" target="_blank" id="tooltip-linkedin2" rel="tooltip" data-placement="bottom" title="Linkedin">
                         	<i class="fab fa-linkedin fa-2x"></i>
-                        </a> &nbsp;
-                        <a href="https://www.lindevidros.com.br/blog" target="_blank" id="tooltip-blog2" rel="tooltip" data-placement="bottom" title="Blog">
-                        	<i class="fab fa-wordpress fa-2x"></i>
                         </a>
                     </div>
                     <div class="col-sm-3">

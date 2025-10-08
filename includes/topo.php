@@ -16,9 +16,6 @@
                         <a href="https://www.linkedin.com/company/linde-vidros/" class="hidden-xs" target="_blank" id="tooltip-linkedin1" rel="tooltip" data-placement="bottom" title="Linkedin">
                         	<i class="fab fa-linkedin fa-lg"></i>
                         </a>
-                        <a href="https://www.lindevidros.com.br/blog" class="hidden-xs" target="_blank" id="tooltip-blog1" rel="tooltip" data-placement="bottom" title="Blog">
-                        	<i class="fab fa-wordpress fa-lg"></i>
-                        </a>
                         <a href="mailto:linde@lindevidros.com.br" id="tooltip-email1" rel="tooltip" data-placement="bottom" title="linde@lindevidros.com.br">
                         	<i class="fas fa-envelope fa-lg"></i>
                         </a>

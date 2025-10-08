@@ -37,7 +37,6 @@
                                             </ul>
                                         </li>
                                         <li><a href="<?php echo $l_servicos; ?>" title="Serviços">Serviços</a></li>
-                                        <li><a href="http://www.lindevidros.com.br/blog/" title="Dicas">Dicas</a></li>
                                         <li><a href="<?php echo $l_contato; ?>" title="Contato">Contato</a></li>
                                     </ul>
                                     <ul class="nav navbar-nav navbar-right">
