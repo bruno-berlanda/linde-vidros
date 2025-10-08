@@ -12,7 +12,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css?<?php echo filemtime('css/bootstrap.min.css'); ?>">
     <link rel="stylesheet" href="css/adm_linde.css?<?php echo filemtime('css/adm_linde.css'); ?>">
-    <link rel="stylesheet" href="../css/fontawesome-all.min.css?<?php echo filemtime('../css/fontawesome-all.min.css'); ?>">
+    <link rel="stylesheet" href="css/fontawesome-all.min.css?<?php echo filemtime('css/fontawesome-all.min.css'); ?>">
     
     <script src="js/jquery.min.js"></script>
     

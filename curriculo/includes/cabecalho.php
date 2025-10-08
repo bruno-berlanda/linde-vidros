@@ -9,10 +9,10 @@
     <link rel="shortcut icon" href="../img/favicon.ico">
     
     <!-- CSS -->
-    <link rel="stylesheet" href="../css/bootstrap.min.css?<?php echo filemtime('../css/bootstrap.min.css'); ?>">
+    <link rel="stylesheet" href="css/bootstrap.min.css?<?php echo filemtime('css/bootstrap.min.css'); ?>">
     <link rel="stylesheet" href="css/flatly.css?<?php echo filemtime('css/flatly.css'); ?>">
     <link rel="stylesheet" href="css/curriculo.css?<?php echo filemtime('css/curriculo.css'); ?>">
-    <link rel="stylesheet" href="../css/fontawesome-all.min.css?<?php echo filemtime('../css/fontawesome-all.min.css'); ?>">
+    <link rel="stylesheet" href="css/fontawesome-all.min.css?<?php echo filemtime('css/fontawesome-all.min.css'); ?>">
     
     <!-- JS -->
     <!--[if lt IE 9]>

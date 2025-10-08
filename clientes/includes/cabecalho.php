@@ -12,8 +12,8 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css?<?php echo filemtime('css/bootstrap.min.css'); ?>">
     <link rel="stylesheet" href="css/restrito.css?<?php echo filemtime('css/restrito.css'); ?>">
-    <link rel="stylesheet" href="../css/fontawesome-all.min.css?<?php echo filemtime('../css/fontawesome-all.min.css'); ?>">
-    <link rel="stylesheet" href="../css/botoes.css?<?php echo filemtime('../css/botoes.css'); ?>">
+    <link rel="stylesheet" href="css/fontawesome-all.min.css?<?php echo filemtime('css/fontawesome-all.min.css'); ?>">
+    <link rel="stylesheet" href="css/botoes.css?<?php echo filemtime('css/botoes.css'); ?>">
     
     <!-- JS -->
     <!--[if lt IE 9]>

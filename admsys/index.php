@@ -22,7 +22,7 @@ else {
 <!-- CSS -->
 <link rel="stylesheet" href="css/bootstrap.min.css?<?php echo filemtime('css/bootstrap.min.css'); ?>">
 <link rel="stylesheet" href="css/login.css?<?php echo filemtime('css/login.css'); ?>">
-<link rel="stylesheet" href="../css/fontawesome-all.min.css?<?php echo filemtime('../css/fontawesome-all.min.css'); ?>">
+<link rel="stylesheet" href="css/fontawesome-all.min.css?<?php echo filemtime('css/fontawesome-all.min.css'); ?>">
 
 <!-- jQuery -->
 <script src="js/jquery.min.js"></script>
