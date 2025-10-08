@@ -1,0 +1,32 @@
+body {
+    font-size: .8rem;
+}
+
+#login-ico {
+    font-size: 2.2rem;
+    color: #999;
+}
+
+#promocoes-menu {
+    font-size: .7rem;
+}
+
+#numero-normal, #numero-sorteado {
+    display: inline-block;
+    width: 80px;
+    font-size: 1.1rem;
+    margin: 3px;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid;
+}
+#numero-normal {
+    border-color: #DDD;
+    background-color: #F2F2F2;
+    color: #555;
+}
+#numero-sorteado {
+    border-color: #198754;
+    background-color: #146c43;
+    color: #FFF;
+}

@@ -1,0 +1,42 @@
+* { margin: 5px; padding: 0; }
+
+body { font-family: 'Dosis', sans-serif; font-size: 13px; color: #444; }
+
+p { margin: 0; }
+
+table { width: 100%; margin: 10px 0; }
+table tr td { text-align: center; }
+
+table.qtde-respostas td { width: 25%; font-size: 10px; }
+
+strong, em { margin: 0; padding: 0; }
+
+/* ************************************** */
+
+h1 { font-size: 20px; border-bottom: 1px solid #444; padding: 0 0 5px 0; margin: 0 0 10px 0; }
+h2 { font-size: 16px; font-weight: bold; color: #337ab7; margin: 8px 0; }
+
+.nome-pesquisa { text-align: center; background-color: #F2F2F2; font-size: 16px; font-weight: bold; padding: 10px; margin: 0; }
+.nome-pesquisa > small { font-size: 11px; }
+
+p.pergunta { font-weight: bold; margin-top: 10px; }
+p.resposta { font-size: 12px; }
+
+p.media { margin: 30px 0; }
+p.media > span { padding: 8px; background-color: #B92D2F; color: #FFF; border-radius: 5px; margin: 0; }
+
+img.img-avaliacao { width: 70px; height: auto; }
+p.total-avaliacao { font-size: 14px; font-weight: bold; }
+p.total-avaliacao > span { background-color: #333; color: #FFF; padding: 3px 8px; border-radius: 5px; }
+
+.titulo-tabela { background-color: #F2F2F2; padding: 5px; }
+
+.clientes-respondido { font-size: 9px; }
+
+.lista-nao { font-size: 9px; }
+.lista-nao strong { font-size: 10px; margin: 0; }
+
+#quebra-linha { page-break-after: always; }
+
+.box-obs { border-left: 3px solid #DDD; font-size: 9px; }
+.box-obs > p { padding-left: 10px; }

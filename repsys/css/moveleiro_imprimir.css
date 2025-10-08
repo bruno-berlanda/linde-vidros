@@ -1,0 +1,27 @@
+body { font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace; font-size: 9px; color: #333; }
+
+.text-uppercase { text-transform: uppercase; }
+
+table { width: 100%; }
+table tr td { vertical-align: top; }
+
+table.borda { border-collapse: collapse; width: 100%; }
+table.borda tr.titulo { font-weight: bold; text-align: center; overflow: auto; background: #333; color: #FFF; }
+table.borda tr td { border: 1px solid #333; padding: 2px 10px; }
+
+#impresso { font-size: 8px; }
+
+.numero-pedido { text-align: right; font-size: 22px; font-weight: bold; }
+
+.info-pedido { margin: 20px 0; padding: 6px 0; border-bottom: 1px dashed #666; border-top: 1px dashed #666; }
+.observacoes { background-color: #F4F4F4; padding: 15px; border-radius: 6px; margin: 5px 0;  }
+.lista-itens { margin-top: 20px; }
+.log-pedido { margin-top: 30px; border-top: 1px solid #999; padding-top: 20px; }
+.horarios-pedido { margin-top: 30px; text-align: center; font-size: 8px; color: #999; }
+
+span.seq { color: #AAA; }
+
+.bg-cinza { background-color: #F5F5F5; }
+
+.obs-cancelamento { background-color: #F4F4F4; border: 1px solid #F0F0F0; padding: 15px; border-radius: 6px; margin: 10px 0; text-align: center; }
+.obs-cancelamento strong { font-size: 11px; }

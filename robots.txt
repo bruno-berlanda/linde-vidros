@@ -1,0 +1,18 @@
+User-agent: *
+
+Allow: /
+
+Disallow: /admsys/
+Disallow: /catalogos/
+Disallow: /clientes/
+Disallow: /croquis/
+Disallow: /curriculo/
+Disallow: /downloads/
+Disallow: /email/
+Disallow: /funcoes/
+Disallow: /imagens/
+Disallow: /includes/
+Disallow: /js/
+Disallow: /pesquisa/
+Disallow: /repsys/
+Disallow: area-restrita.php

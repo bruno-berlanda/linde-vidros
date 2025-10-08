@@ -1,0 +1,5 @@
+body { color: #FFF; background-color: #5a5c69; background-image: linear-gradient(180deg,#5a5c69 10%,#373840 100%); background-size: cover; }
+
+#erro { text-align: center; margin-top: 80px; }
+#erro i { font-size: 15rem; }
+#erro h1 { font-weight: bold; font-size: 3rem; margin-top: 20px; }

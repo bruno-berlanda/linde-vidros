@@ -1,0 +1,56 @@
+* { text-shadow: none; filter: none; -ms-filter: none }
+body { font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace; font-size: 9px; color: #000; }
+
+hr { margin: 20px 0; border: 0; border-top: 1px solid #eee; border-bottom: 1px solid #fff; }
+
+.muted { color: #AAA; }
+.text-center { text-align: center; }
+
+.clear { clear: both; }
+
+/* Logos */
+.logo-linde { float: left; }
+.logo-linde img { max-height: 40px; width: auto; }
+
+/* Título */
+.titulo-orc { background-color: #1469B8; color: #FFF; padding: 5px; text-align: center; font-size: 15px; font-weight: bold; margin-top: 10px; }
+
+/* Tabelas */
+.tabela { margin-top: 5px; }
+
+table { border-collapse: collapse; width: 100%; }
+table tr.titulo { font-weight: bold; text-align: center; overflow: auto; background: #000; color: #FFF; }
+table tr.total { font-weight: bold; overflow: auto; background: #eee; color: #333; border-top: 2px solid #333; }
+table tr.total-imposto { font-weight: bold; overflow: auto; color: #333; border-top: 1px solid #333; }
+table tr td { padding: 7px 4px; }
+
+table.composicao { border-collapse: collapse; width: 100%; }
+table.composicao tr.titulo { font-weight: bold; text-align: center; overflow: auto; background: #000; color: #FFF; }
+table.composicao tr td { padding: 2px 10px; }
+
+table.borda { border-collapse: collapse; width: 100%; }
+table.borda tr.titulo { font-weight: bold; text-align: center; overflow: auto; background: #333; color: #FFF; }
+table.borda tr.total { font-weight: bold; overflow: auto; background: #EEE; color: #333; border-top: 2px solid #333; font-size: 10px; }
+table.borda tr td { border: 1px solid #333; padding: 2px 10px; }
+
+.vertical-topo { vertical-align: top; }
+
+.linha-vidro { }
+.linha-camara { background-color: #F5F5F5; }
+
+/* Composição */
+.vidros-composicao { border-top: 1px dashed #666; border-bottom: 1px dashed #666; padding: 8px 3px; margin: 15px 0; }
+.comp-vidro { color: #1469B8; }
+.comp-camara { color: #C43E41; }
+.comp-valor { text-align: right; }
+
+/* Observações */
+.obs { margin-top: 10px; }
+.conteudo-obs { margin-top: 5px; min-height: 10px; border: 1px solid #CCC; padding: 10px; }
+
+/* Descrição Insulado */
+.desc-duplo { text-align: center; margin-top: 20px; font-size: 8px; }
+.desc-duplo br { line-height: 20px; }
+
+/* Dados Empresa */
+.endereco { text-align: center; font-size: 10px; }

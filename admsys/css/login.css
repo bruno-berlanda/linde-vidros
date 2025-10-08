@@ -1,0 +1,8 @@
+body { padding-top: 10px; padding-bottom: 40px; background: url(../img/background_login.jpg); }
+
+#box-login { background: url(../img/tansparent_white.png) repeat; padding: 25px; border-radius: 8px; }
+
+/* Formulários */ 
+.input-group-addon { min-width: 50px; }
+
+legend { color: #BBB; }

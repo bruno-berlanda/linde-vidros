@@ -1,0 +1,76 @@
+body { color: #444; font-size: 80%; }
+
+/* LOGIN */
+.bg-login-image { background: url("../img/img-login.jpg"); background-position: center; background-size: cover; }
+
+/* CONTEÚDO */
+#wrapper { margin-top: 5px; }
+#content { margin-bottom: 50px; }
+
+/* Menu Topo */
+#menu-topo { padding: 2px 8px; }
+.dropdown-item { font-size: 12px; }
+.navbar-light .navbar-toggler { border: none; }
+
+.navbar-light .navbar-brand { color: #CCC; }
+
+/* Menu Lateral */
+.sidebar .nav-item .nav-link { padding: 4px; }
+.sidebar .nav-item .nav-link span { font-size: 12px; }
+.sidebar .nav-item .collapse .collapse-inner .collapse-item, .sidebar .nav-item .collapsing .collapse-inner .collapse-item { padding: 4px 10px; font-size: 12px; }
+
+#accordionSidebar { border-top-right-radius: 10px; }
+
+/* Tabelas */
+.table { color: #666; }
+.table-sm td, .table-sm th { font-size: 82%; }
+
+.dataTables_wrapper .dataTables_filter { font-size: 11px; }
+.dataTables_length { font-size: 11px; }
+.dataTables_wrapper .dataTables_paginate { font-size: 10px; }
+.dataTables_wrapper .dataTables_info { font-size: 10px; }
+
+div.dataTables_wrapper div.dataTables_length label { color: #BBB; }
+div.dataTables_wrapper div.dataTables_length select { font-size: 90%; }
+div.dataTables_wrapper div.dataTables_filter label { color: #BBB; }
+div.dataTables_wrapper div.dataTables_info { color: #BBB; }
+table.dataTable th { color: #CCC; }
+table.dataTable th:hover { color: #555; }
+
+.page-item.active .page-link { background-color: #5a5c69; border-color: #5a5c69; }
+
+/* Alertas */
+.alert { font-size: 90%; }
+.close { line-height: .6; }
+
+/* Coluna de Botões nas Tabelas - Tamanho Padrão */
+.col-btn { width: 30px; }
+
+/* Botões */
+.btn-group-xs>.btn, .btn-xs { padding: .11rem .3rem; font-size: .600rem; line-height: 1.5; border-radius: .2rem; }
+#btn-form-table { padding: .14rem .5rem }
+
+/* Pills */
+#v-pills-tab { font-size: 12px; }
+
+/* Jumbotron */
+.jumbotron h1 { text-transform: none; border: none; font-size: 50px; }
+
+/* ***** */
+
+h1 { font-size: 22px; border-bottom: 1px solid #e3e6f0; padding-bottom: 8px; text-transform:  uppercase; color: #555; font-weight: bold; margin-bottom: 20px; }
+h6 { color: #BBB; text-transform: uppercase; }
+
+/* Senha Padrão */
+#senha-padrao { background-color: #d54040; color: #FFF; }
+#senha-padrao h1 { color: #FFF; text-transform: none; }
+#senha-padrao #box-senha-padrao { background-color: #a41c1c; padding: 20px; border-radius: .3rem; }
+
+/* Lido */
+#naolido { font-weight: bold; }
+
+/* Solicitações */
+#n_id { font-size: 28px; }
+
+/* Tab */
+#myTabContent { margin-top: 20px; }
