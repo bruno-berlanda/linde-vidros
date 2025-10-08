@@ -3,7 +3,6 @@ User-agent: *
 Allow: /
 
 Disallow: /admsys/
-Disallow: /catalogos/
 Disallow: /clientes/
 Disallow: /croquis/
 Disallow: /curriculo/
