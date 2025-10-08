@@ -1,4 +1,4 @@
-body { background: url(../img/crossword.png) repeat; font-family: 'Ropa Sans', sans-serif; font-size: 17px; }
+body { font-family: 'Ropa Sans', sans-serif; font-size: 17px; }
 
 .img-responsive { margin: 0 auto; }
 
@@ -58,15 +58,6 @@ body { background: url(../img/crossword.png) repeat; font-family: 'Ropa Sans', s
 #img-thumb > img { border-top-right-radius: 3px; border-top-left-radius: 3px; }
 #img-thumb > .caption p#titulo-pg { font-size: 25px; margin-bottom: 0; color: #333; }
 #img-thumb > .caption p { color: #999; }
-
-.thumbnail > img { -ms-filter: grayscale(1); -webkit-filter: grayscale(1); -moz-filter: grayscale(1); -o-filter: grayscale(1); filter: grayscale(1); }
-.thumbnail:hover > img { -ms-filter: grayscale(0); -webkit-filter: grayscale(0); -moz-filter: grayscale(0); -o-filter: grayscale(0); filter: grayscale(0); }
-
-@media (max-width: 767px) {
-.thumbnail > img { -ms-filter: grayscale(0); -webkit-filter: grayscale(0); -moz-filter: grayscale(0); -o-filter: grayscale(0); filter: grayscale(0); }	
-}
-
-#img-colorida { -ms-filter: grayscale(0); -webkit-filter: grayscale(0); -moz-filter: grayscale(0); -o-filter: grayscale(0); filter: grayscale(0); }
 
 #img-esquerda { float: left; margin: 0 20px 10px 0; }
 
