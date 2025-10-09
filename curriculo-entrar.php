@@ -131,7 +131,7 @@ require_once ("includes/links.php");
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <form method="post" action="funcoes/login_curriculos.php" class="form-horizontal">
+                <form method="post" action="funcoes/recuperar_senha.php" class="form-horizontal">
                     <fieldset>
                         <div class="form-floating mb-3">
                             <input type="text" name="cpf" class="form-control" id="inputCPF2" required placeholder="">
