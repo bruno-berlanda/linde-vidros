@@ -42,12 +42,10 @@
                                     </ul>
                                     <ul class="navbar-nav mb-2 mb-lg-0">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="<?php echo $l_area; ?>" title="Área Restrita"><i class="fa-solid fa-lock fa-fw text-primary"></i> Área Restrita</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="https://ecommerce.lindevidros.com.br" target="_blank" title="E-commerce Linde Vidros"><i class="fa-solid fa-cart-shopping fa-fw text-primary"></i> E-commerce</a>
+                                            <a class="nav-link me-2" href="<?php echo $l_area; ?>" title="Área Restrita"><i class="fa-solid fa-lock fa-fw text-primary"></i> Área Restrita</a>
                                         </li>
                                     </ul>
+                                    <a href="https://ecommerce.lindevidros.com.br" target="_blank" title="E-commerce Linde Vidros" class="btn btn-primary"><i class="fa-solid fa-cart-shopping fa-fw"></i> E-commerce</a>
                                 </div>
                             </div>
                         </nav>
