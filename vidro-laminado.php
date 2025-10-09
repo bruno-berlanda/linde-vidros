@@ -5,7 +5,7 @@
 require_once ("funcoes/conexao.php");
 
 /* Tag Google */
-$con_tag = mysqli_query ($conexao, "SELECT vidro_laminado AS tag FROM admin_tags WHERE id='1'") or die (mysqli_error());
+$con_tag = mysqli_query ($conexao, "SELECT vidro_laminado AS tag FROM admin_tags WHERE id='1'") or die (mysqli_error($conexao));
 	$d_tag = mysqli_fetch_array ($con_tag);
 		$tag = $d_tag['tag'];
 		
@@ -18,7 +18,7 @@ $title = "Vidro Laminado, segurança e proteção - Linde Vidros";
 $description = "O vidro laminado, une a qualidade de dois vidros de segurança formando um produto ainda mais resistente e com maior conforto acústico" . $tg;
 $keywords = "Vidro Laminado, Vidros Laminados, Conforto Acústico, Vidro Laminado Temperado, Vidro Resistente, Linde Vidros, distribuidora de vidro, beneficiadora de vidro, fábrica de vidro";
 
-$og_url = "http://www.lindevidros.com.br/vidro-laminado";
+$og_url = "https://www.lindevidros.com.br/vidro-laminado";
 $og_name = "Vidro Laminado";
 
 $submenu_id = "E-VL";
@@ -39,26 +39,26 @@ require_once ("includes/links.php");
 <?php //include_once ("includes/logo.php"); ?>
 
 <div class="container-fluid">
-	<div class="row" id="titulo">
-    	<div class="col-md-12">
-        	<div class="container">
-            	<div class="row">
-                    <div class="col-md-12">
-                    	<h1>Vidro Laminado</h1>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="row">
+        <div class="col-12 bg-light py-4 border-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="text-azul-linde">Vidro Laminado</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <div class="container">
-    <div class="row" id="img-pg">
+    <div class="row mt-3">
     	<div class="col-md-12">
-        	<img src="img/img_laminado.jpg" alt="Vidro Laminado" class="img-rounded img-responsive">
+        	<img src="img/img_laminado.jpg" alt="Vidro Laminado" class="rounded img-fluid">
         </div>
     </div>
-    <div class="row" id="conteudo">
+    <div class="row my-4">
         <div class="col-md-9">
             <p class="text-justify">O <strong>vidro laminado</strong> é composto por duas ou mais placas de vidro, que são unidas por uma ou mais camadas intermediárias chamadas de interlayers. Quando quebrado, os estilhaços ficam presos à essa camada intermediária. Esta característica produz o efeito de uma "teia de aranha" quando o impacto não é totalmente suficiente para furar o vidro.</p>
             
@@ -125,29 +125,29 @@ require_once ("includes/links.php");
         </div>
     </div>
     
-    <div class="row" id="conteudo">
-    	<div class="col-md-12">
+    <div class="row my-4">
+    	<div class="col-12">
         	<hr>
             
             <div class="row">
-                <div class="col-xs-4 col-md-2">
-                    <a href="img/produtos/grande/laminado1.jpg" rel="shadowbox[vocation]" title="Vidro Laminado" class="thumbnail">
-                    <img src="img/produtos/miniatura/laminado1.jpg" alt="Vidro Laminado">
+                <div class="col-4 col-md-2 mb-2">
+                    <a href="img/produtos/grande/laminado1.jpg" rel="shadowbox[vocation]" title="Vidro Laminado">
+                        <img src="img/produtos/miniatura/laminado1.jpg" alt="Vidro Laminado" class="img-fluid img-thumbnail">
                     </a>
                 </div>
-                <div class="col-xs-4 col-md-2">
-                    <a href="img/produtos/grande/laminado2.jpg" rel="shadowbox[vocation]" title="Vidro Laminado" class="thumbnail">
-                    <img src="img/produtos/miniatura/laminado2.jpg" alt="Vidro Laminado">
+                <div class="col-4 col-md-2 mb-2">
+                    <a href="img/produtos/grande/laminado2.jpg" rel="shadowbox[vocation]" title="Vidro Laminado">
+                        <img src="img/produtos/miniatura/laminado2.jpg" alt="Vidro Laminado" class="img-fluid img-thumbnail">
                     </a>
                 </div>
-                <div class="col-xs-4 col-md-2">
-                    <a href="img/produtos/grande/laminado3.jpg" rel="shadowbox[vocation]" title="Vidro Laminado" class="thumbnail">
-                    <img src="img/produtos/miniatura/laminado3.jpg" alt="Vidro Laminado">
+                <div class="col-4 col-md-2 mb-2">
+                    <a href="img/produtos/grande/laminado3.jpg" rel="shadowbox[vocation]" title="Vidro Laminado">
+                        <img src="img/produtos/miniatura/laminado3.jpg" alt="Vidro Laminado" class="img-fluid img-thumbnail">
                     </a>
                 </div>
-                <div class="col-xs-4 col-md-2">
-                    <a href="img/produtos/grande/laminado4.jpg" rel="shadowbox[vocation]" title="Vidro Laminado" class="thumbnail">
-                    <img src="img/produtos/miniatura/laminado4.jpg" alt="Vidro Laminado">
+                <div class="col-4 col-md-2 mb-2">
+                    <a href="img/produtos/grande/laminado4.jpg" rel="shadowbox[vocation]" title="Vidro Laminado">
+                        <img src="img/produtos/miniatura/laminado4.jpg" alt="Vidro Laminado" class="img-fluid img-thumbnail">
                     </a>
                 </div>
             </div>

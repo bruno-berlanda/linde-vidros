@@ -5,7 +5,7 @@
 require_once ("funcoes/conexao.php");
 
 /* Tag Google */
-$con_tag = mysqli_query ($conexao, "SELECT serigrafia AS tag FROM admin_tags WHERE id='1'") or die (mysqli_error());
+$con_tag = mysqli_query ($conexao, "SELECT serigrafia AS tag FROM admin_tags WHERE id='1'") or die (mysqli_error($conexao));
 	$d_tag = mysqli_fetch_array ($con_tag);
 		$tag = $d_tag['tag'];
 		
@@ -18,7 +18,7 @@ $title = "Empresa - Linde Vidros";
 $description = "A Linde Vidros é uma indústria beneficiadora de vidro localizada na cidade de Rio Negro, Paraná. Fundada em 1966 está a mais de 50 anos no mercado" . $tg;
 $keywords = "linde vidros, missão linde vidros, visão linde vidros, valores linde vidros, certificados linde vidros";
 
-$og_url = "http://www.lindevidros.com.br/empresa";
+$og_url = "https://www.lindevidros.com.br/empresa";
 $og_name = "Linde Vidros";
 
 $submenu_id = "EMPRESA";
@@ -39,25 +39,25 @@ require_once ("includes/links.php");
 <?php //include_once ("includes/logo.php"); ?>
 
 <div class="container-fluid">
-	<div class="row" id="titulo">
-    	<div class="col-md-12">
-        	<div class="container">
-            	<div class="row">
-                    <div class="col-md-12">
-                    	<h1>Empresa</h1>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="row">
+        <div class="col-12 bg-light py-4 border-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="text-azul-linde">Empresa</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <div class="container">
-    <div class="row" id="conteudo">
+    <div class="row my-4">
         <div class="col-md-12">
         	<h2>A Linde Vidros</h2>
             
-            <p class="text-justify"><img src="img/empresa/img_empresa_bandeira.jpg" alt="Linde Vidros" class="img-thumbnail img-responsive" id="img-esquerda"> Em agosto de 1991 foi fundada uma filial na cidade de Rio Negro – PR para a distribuição em chapas de vidros em geral, atendendo outras regiões.</p>
+            <p class="text-justify"><img src="img/empresa/img_empresa_bandeira.jpg" alt="Linde Vidros" class="img-thumbnail img-fluid float-start me-4 mb-4"> Em agosto de 1991 foi fundada uma filial na cidade de Rio Negro – PR para a distribuição em chapas de vidros em geral, atendendo outras regiões.</p>
             
             <p class="text-justify">Nos últimos anos, a unidade de Rio Negro, vem investindo em máquinas de última geração para melhor corte e acabamento; no ano 2000 foi instalado um forno de tempera vertical, mas a grande mudança ocorreu no ano de 2003 com a aquisição de um forno de tempera horizontal com capacidade de temperar vidro de 2,8mm até 19mm e em março de 2008 foi instalado seu segundo forno horizontal.</p>
             
@@ -70,30 +70,30 @@ require_once ("includes/links.php");
             <br>
             
             <div class="row">
-                <div class="col-xs-12 col-sm-4 col-md-4">
-                    <div class="thumbnail" id="img-thumb">
-                        <img src="img/emp_missao.jpg" alt="Missão">
-                        <div class="caption">
-                            <p id="titulo-pg">Missão</p>
-                            <p>Oferecer produtos e serviços competitivos em vidros, aumentando a participação no mercado, com foco na excelência, inovação e sustentabilidade.</p>
+                <div class="col-12 col-sm-4">
+                    <div class="card mb-3">
+                        <img src="img/emp_missao.jpg" class="card-img-top" alt="Missão">
+                        <div class="card-body">
+                            <p class="text-azul-linde h5 mb-0">Missão</p>
+                            <p class="card-text text-muted">Oferecer produtos e serviços competitivos em vidros, aumentando a participação no mercado, com foco na excelência, inovação e sustentabilidade.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-4 col-md-4">
-                    <div class="thumbnail" id="img-thumb">
-                        <img src="img/emp_visao.jpg" alt="Visão">
-                        <div class="caption">
-                            <p id="titulo-pg">Visão</p>
-                            <p>Ser referência em produtos e serviços em vidros com foco na excelência, inovação e sustentabilidade.</p>
+                <div class="col-12 col-sm-4">
+                    <div class="card mb-3">
+                        <img src="img/emp_visao.jpg" class="card-img-top" alt="Visão">
+                        <div class="card-body">
+                            <p class="text-azul-linde h5 mb-0">Visão</p>
+                            <p class="card-text text-muted">Ser referência em produtos e serviços em vidros com foco na excelência, inovação e sustentabilidade.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-4 col-md-4">
-                    <div class="thumbnail" id="img-thumb">
-                        <img src="img/emp_valores.jpg" alt="Valores">
-                        <div class="caption">
-                            <p id="titulo-pg">Valores</p>
-                            <p>Ética, transparência, profissionalismo, atendimento, comprometimento, inovação, trabalho em equipe, qualidade-excelência.</p>
+                <div class="col-12 col-sm-4">
+                    <div class="card mb-3">
+                        <img src="img/emp_valores.jpg" class="card-img-top" alt="Valores">
+                        <div class="card-body">
+                            <p class="text-azul-linde h5 mb-0">Valores</p>
+                            <p class="card-text text-muted">Ética, transparência, profissionalismo, atendimento, comprometimento, inovação, trabalho em equipe, qualidade-excelência.</p>
                         </div>
                     </div>
                 </div>
@@ -114,44 +114,44 @@ require_once ("includes/links.php");
             <hr>
     
             <div class="row">
-                <div class="col-xs-4 col-md-2">
-                    <a href="img/empresa/grande/linde_1991.jpg" rel="shadowbox[vocation]" title="Linde Vidros 1991" class="thumbnail">
-                    <img src="img/empresa/miniatura/linde_1991.jpg" alt="Linde Vidros">
+                <div class="col-4 col-md-2 mb-2">
+                    <a href="img/empresa/grande/linde_1991.jpg" rel="shadowbox[vocation]" title="Linde Vidros 1991">
+                        <img src="img/empresa/miniatura/linde_1991.jpg" alt="Linde Vidros 1991" class="img-fluid img-thumbnail">
                     </a>
                 </div>
-                <div class="col-xs-4 col-md-2">
-                    <a href="img/empresa/grande/linde_1993.jpg" rel="shadowbox[vocation]" title="Linde Vidros 1993" class="thumbnail">
-                    <img src="img/empresa/miniatura/linde_1993.jpg" alt="Linde Vidros">
+                <div class="col-4 col-md-2 mb-2">
+                    <a href="img/empresa/grande/linde_1993.jpg" rel="shadowbox[vocation]" title="Linde Vidros 1993">
+                        <img src="img/empresa/miniatura/linde_1993.jpg" alt="Linde Vidros 1993" class="img-fluid img-thumbnail">
                     </a>
                 </div>
-                <div class="col-xs-4 col-md-2">
-                    <a href="img/empresa/grande/linde_1995.jpg" rel="shadowbox[vocation]" title="Linde Vidros 1995" class="thumbnail">
-                    <img src="img/empresa/miniatura/linde_1995.jpg" alt="Linde Vidros">
+                <div class="col-4 col-md-2 mb-2">
+                    <a href="img/empresa/grande/linde_1995.jpg" rel="shadowbox[vocation]" title="Linde Vidros 1995">
+                        <img src="img/empresa/miniatura/linde_1995.jpg" alt="Linde Vidros 1995" class="img-fluid img-thumbnail">
                     </a>
                 </div>
-                <div class="col-xs-4 col-md-2">
-                    <a href="img/empresa/grande/linde_2004.jpg" rel="shadowbox[vocation]" title="Linde Vidros 2004" class="thumbnail">
-                    <img src="img/empresa/miniatura/linde_2004.jpg" alt="Linde Vidros">
+                <div class="col-4 col-md-2 mb-2">
+                    <a href="img/empresa/grande/linde_2004.jpg" rel="shadowbox[vocation]" title="Linde Vidros 2004">
+                        <img src="img/empresa/miniatura/linde_2004.jpg" alt="Linde Vidros 2004" class="img-fluid img-thumbnail">
                     </a>
                 </div>
-                <div class="col-xs-4 col-md-2">
-                    <a href="img/empresa/grande/linde_2007.jpg" rel="shadowbox[vocation]" title="Linde Vidros 2007" class="thumbnail">
-                    <img src="img/empresa/miniatura/linde_2007.jpg" alt="Linde Vidros">
+                <div class="col-4 col-md-2 mb-2">
+                    <a href="img/empresa/grande/linde_2007.jpg" rel="shadowbox[vocation]" title="Linde Vidros 2007">
+                        <img src="img/empresa/miniatura/linde_2007.jpg" alt="Linde Vidros 2007" class="img-fluid img-thumbnail">
                     </a>
                 </div>
-                <div class="col-xs-4 col-md-2">
-                    <a href="img/empresa/grande/linde_2009.jpg" rel="shadowbox[vocation]" title="Linde Vidros 2009" class="thumbnail">
-                    <img src="img/empresa/miniatura/linde_2009.jpg" alt="Linde Vidros">
+                <div class="col-4 col-md-2 mb-2">
+                    <a href="img/empresa/grande/linde_2009.jpg" rel="shadowbox[vocation]" title="Linde Vidros 2009">
+                        <img src="img/empresa/miniatura/linde_2009.jpg" alt="Linde Vidros 2009" class="img-fluid img-thumbnail">
                     </a>
                 </div>
-                <div class="col-xs-4 col-md-2">
-                    <a href="img/empresa/grande/linde_2012.jpg" rel="shadowbox[vocation]" title="Linde Vidros 2012" class="thumbnail">
-                    <img src="img/empresa/miniatura/linde_2012.jpg" alt="Linde Vidros">
+                <div class="col-4 col-md-2 mb-2">
+                    <a href="img/empresa/grande/linde_2012.jpg" rel="shadowbox[vocation]" title="Linde Vidros 2012">
+                        <img src="img/empresa/miniatura/linde_2012.jpg" alt="Linde Vidros 2012" class="img-fluid img-thumbnail">
                     </a>
                 </div>
-                <div class="col-xs-4 col-md-2">
-                    <a href="img/empresa/grande/linde_2014.jpg" rel="shadowbox[vocation]" title="Linde Vidros 2014" class="thumbnail">
-                    <img src="img/empresa/miniatura/linde_2014.jpg" alt="Linde Vidros">
+                <div class="col-4 col-md-2 mb-2">
+                    <a href="img/empresa/grande/linde_2014.jpg" rel="shadowbox[vocation]" title="Linde Vidros 2014">
+                        <img src="img/empresa/miniatura/linde_2014.jpg" alt="Linde Vidros 2014" class="img-fluid img-thumbnail">
                     </a>
                 </div>
             </div>

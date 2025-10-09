@@ -5,7 +5,7 @@
 require_once ("funcoes/conexao.php");
 
 /* Tag Google */
-$con_tag = mysqli_query ($conexao, "SELECT tampas_freezer AS tag FROM admin_tags WHERE id='1'") or die (mysqli_error());
+$con_tag = mysqli_query ($conexao, "SELECT tampas_freezer AS tag FROM admin_tags WHERE id='1'") or die (mysqli_error($conexao));
 	$d_tag = mysqli_fetch_array ($con_tag);
 		$tag = $d_tag['tag'];
 		
@@ -18,7 +18,7 @@ $title = "Tampas para Freezer - Linde Vidros";
 $description = "Tampas para Freezer Horizontal com vidro monolítico baixo emissivo temperado" . $tg;
 $keywords = "tampas freezer, tampas de vidro para freezer, freezer horizontal, vidro baixo emissivo";
 
-$og_url = "http://www.lindevidros.com.br/tampas-freezer";
+$og_url = "https://www.lindevidros.com.br/tampas-freezer";
 $og_name = "Tampas para Freezer";
 
 $submenu_id = "R-TF";
@@ -39,21 +39,21 @@ require_once ("includes/links.php");
 <?php //include_once ("includes/logo.php"); ?>
 
 <div class="container-fluid">
-	<div class="row" id="titulo">
-    	<div class="col-md-12">
-        	<div class="container">
-            	<div class="row">
-                    <div class="col-md-12">
-                    	<h1>Tampas para Freezer Horizontal</h1>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="row">
+        <div class="col-12 bg-light py-4 border-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="text-azul-linde">Tampas para Freezer Horizontal</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <div class="container">
-    <div class="row" id="conteudo">
+    <div class="row my-4">
         <div class="col-md-9">
             <p class="text-justify">A Linde Vidros, inovando mais uma vez, traz para o mercado soluções em <strong>vidros Low-E</strong> temperados para aplicação em sistemas refrigerados. O <strong>vidro Low-E</strong> é melhor opção para aplicações que necessitam de controle da condensação passiva e bom desempenho térmico, com baixa emissividade, aparência incolor neutra, alta transparência e qualidade óptica possibilitando melhor visualização de alimentos e bebidas ideal para ser utilizado em portas de freezers e refrigeradores.</p>
             

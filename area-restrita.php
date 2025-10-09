@@ -5,7 +5,7 @@
 require_once ("funcoes/conexao.php");
 
 /* Tag Google */
-$con_tag = mysqli_query ($conexao, "SELECT area_restrita AS tag FROM admin_tags WHERE id='1'") or die (mysqli_error());
+$con_tag = mysqli_query ($conexao, "SELECT area_restrita AS tag FROM admin_tags WHERE id='1'") or die (mysqli_error($conexao));
 	$d_tag = mysqli_fetch_array ($con_tag);
 		$tag = $d_tag['tag'];
 		
@@ -18,7 +18,7 @@ $title = "Área Restrita - Linde Vidros";
 $description = "Para os clientes Linde Vidros, disponibilizamos uma área dedicada com diversos materiais de apoio" . $tg;
 $keywords = "área restrita linde vidros, área cliente linde vidros";
 
-$og_url = "http://www.lindevidros.com.br/area-restrita";
+$og_url = "https://www.lindevidros.com.br/area-restrita";
 $og_name = "Área Restrita";
 
 $submenu_id = "AREA";
@@ -39,92 +39,78 @@ require_once ("includes/links.php");
 <?php //include_once ("includes/logo.php"); ?>
 
 <div class="container-fluid">
-	<div class="row" id="titulo">
-    	<div class="col-md-12">
-        	<div class="container">
-            	<div class="row">
-                    <div class="col-md-12">
-                    	<h1>Área Restrita</h1>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="row">
+        <div class="col-12 bg-light py-4 border-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="text-azul-linde">Área Restrita</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <div class="container">
     <?php /* ****************************************************************************************************************************************************************** */ ?>
 	<?php if (isset($_GET['msgSucesso'])) { $msg = $_GET['msgSucesso']; ?>
-    <div class="row" id="conteudo">
-        <div class="col-xs-12">
-            <div class="alert alert-success alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <i class="fas fa-check-circle fa-lg"></i>
-                <?php echo $msg; ?>
+    <div class="row my-4">
+        <div class="col-12">
+            <div class="alert alert-success" role="alert">
+                <i class="fa-solid fa-circle-check me-2"></i> <?php echo $msg; ?>
             </div>
         </div>
     </div>
     <?php } ?>
     <?php if (isset($_GET['msgErro'])) { $msg = $_GET['msgErro']; ?>
-    <div class="row" id="conteudo">
-        <div class="col-xs-12">
-            <div class="alert alert-danger alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <i class="fas fa-times-circle fa-lg"></i>
-                <?php echo $msg; ?>
+    <div class="row my-4">
+        <div class="col-12">
+            <div class="alert alert-danger" role="alert">
+                <i class="fa-solid fa-xmark me-2"></i> <?php echo $msg; ?>
             </div>
         </div>
     </div>
     <?php } ?>
     <?php if (isset($_GET['msgInfo'])) { $msg = $_GET['msgInfo']; ?>
-    <div class="row" id="conteudo">
-        <div class="col-xs-12">
-            <div class="alert alert-info alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <i class="fas fa-info-circle fa-lg"></i>
-                <?php echo $msg; ?>
+    <div class="row my-4">
+        <div class="col-12">
+            <div class="alert alert-info" role="alert">
+                <i class="fa-solid fa-circle-info me-2"></i> <?php echo $msg; ?>
             </div>
         </div>
     </div>
     <?php } ?>
     <?php if (isset($_GET['msgAlerta'])) { $msg = $_GET['msgAlerta']; ?>
-    <div class="row" id="conteudo">
-        <div class="col-xs-12">
-            <div class="alert alert-warning alert-dismissible" role="alert">
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <i class="fas fa-exclamation-triangle fa-lg"></i>
-                <?php echo $msg; ?>
+    <div class="row my-4">
+        <div class="col-12">
+            <div class="alert alert-warning" role="alert">
+                <i class="fa-solid fa-triangle-exclamation me-2"></i> <?php echo $msg; ?>
             </div>
         </div>
     </div>
     <?php } ?>
     <?php /* ****************************************************************************************************************************************************************** */ ?>
     
-    <div class="row" id="conteudo">
+    <div class="row my-4">
         <div class="col-md-5">
         	<form method="post" action="funcoes/login_clientes.php" class="form-horizontal">
                 <fieldset>
                 
-                <legend>Acesse a Área Restrita</legend>
-                
-                <div class="form-group">
-                    <label for="inputCNPJLogin2" class="col-sm-3 control-label">CNPJ</label>
-                    <div class="col-sm-9">
-                        <input type="text" name="cnpj" class="form-control" id="inputCNPJLogin2" required>
+                    <legend>Acesse a Área Restrita</legend>
+
+                    <div class="form-floating mb-3">
+                        <input type="text" name="cnpj" class="form-control" id="inputCNPJLogin2" required placeholder="">
+                        <label for="inputCNPJLogin2">CNPJ</label>
                     </div>
-                </div>
-                <div class="form-group">
-                    <label for="inputSenha" class="col-sm-3 control-label">Senha</label>
-                    <div class="col-sm-9">
-                        <input type="password" name="senha" class="form-control" id="inputSenha" maxlength="20" required>
+                    <div class="form-floating">
+                        <input type="password" name="senha" class="form-control" id="inputSenha" required placeholder="">
+                        <label for="inputSenha">Senha</label>
                     </div>
-                </div>
-                
-                <div class="form-group">
-                    <div class="col-sm-offset-3 col-sm-9">
-                        <button type="submit" class="btn btn-primary btn-lg">Entrar</button>
-                    </div>
-                </div>
+
+                    <button type="submit" class="btn btn-primary mt-2">
+                        <i class="fa-solid fa-arrow-right-to-bracket"></i> Entrar
+                    </button>
                 
                 </fieldset>
             </form>
@@ -133,10 +119,9 @@ require_once ("includes/links.php");
             <h2>Quero me cadastrar!</h2>
             
             <p class="text-justify">Se você já é cliente Linde, e quer ter acesso à área restrita, faça seu cadastro. Em breve estaremos enviando os dados de acesso no e-mail cadastrado.</p>
-    
-            <div class="alert alert-warning alert-dismissible" role="alert">
-                <i class="fas fa-exclamation-triangle fa-lg"></i>
-                Campos com * são obrigatórios
+
+            <div class="alert alert-warning" role="alert">
+                <i class="fa-solid fa-triangle-exclamation me-2"></i> Campos com * são obrigatórios
             </div>
             
             <form method="post" action="funcoes/cadastro_cliente.php?opt=cliente" class="form-horizontal">

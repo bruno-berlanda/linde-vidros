@@ -5,7 +5,7 @@
 require_once ("funcoes/conexao.php");
 
 /* Tag Google */
-$con_tag = mysqli_query ($conexao, "SELECT gestao_pessoas AS tag FROM admin_tags WHERE id='1'") or die (mysqli_error());
+$con_tag = mysqli_query ($conexao, "SELECT gestao_pessoas AS tag FROM admin_tags WHERE id='1'") or die (mysqli_error($conexao));
 	$d_tag = mysqli_fetch_array ($con_tag);
 		$tag = $d_tag['tag'];
 		
@@ -18,7 +18,7 @@ $title = "Gestão de Pessoas - Linde Vidros";
 $description = "A Linde Vidros busca parceria com seus colaboradores, para juntos perseguirem os objetivos e metas com profissionalismo e ética, visando aumentar a satisfação dos clientes, funcionários e cidadãos" . $tg;
 $keywords = "gestão de pessoas linde vidros, trabalhar na linde vidros";
 
-$og_url = "http://www.lindevidros.com.br/gestao-pessoas";
+$og_url = "https://www.lindevidros.com.br/gestao-pessoas";
 $og_name = "Gestão de Pessoas";
 
 $submenu_id = "GESTAO";
@@ -39,27 +39,27 @@ require_once ("includes/links.php");
 <?php //include_once ("includes/logo.php"); ?>
 
 <div class="container-fluid">
-	<div class="row" id="titulo">
-    	<div class="col-md-12">
-        	<div class="container">
-            	<div class="row">
-                    <div class="col-md-12">
-                    	<h1>Gestão de Pessoas</h1>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="row">
+        <div class="col-12 bg-light py-4 border-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="text-azul-linde">Gestão de Pessoas</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <div class="container">
-    <div class="row" id="conteudo">
+    <div class="row my-4">
         <div class="col-md-12">
         	<p class="text-justify">A <strong>Linde Vidros</strong> desenvolve parceria com seus colaboradores, para juntos conquistarmos os objetivos e metas, com profissionalismo e ética, visando a satisfação dos clientes, funcionários e cidadãos.</p>
             
             <br>
             
-            <p><img src="img/empresa/colaboradores.jpg" alt="50 Anos Linde Vidros" class="img-responsive img-thumbnail"></p>
+            <p class="text-center"><img src="img/empresa/colaboradores.jpg" alt="50 Anos Linde Vidros" class="img-fluid img-thumbnail"></p>
             
             <br>
             

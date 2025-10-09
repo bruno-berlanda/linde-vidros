@@ -5,7 +5,7 @@
 require_once ("funcoes/conexao.php");
 
 /* Tag Google */
-$con_tag = mysqli_query ($conexao, "SELECT vidro_habitat AS tag FROM admin_tags WHERE id='1'") or die (mysqli_error());
+$con_tag = mysqli_query ($conexao, "SELECT vidro_habitat AS tag FROM admin_tags WHERE id='1'") or die (mysqli_error($conexao));
 	$d_tag = mysqli_fetch_array ($con_tag);
 		$tag = $d_tag['tag'];
 		
@@ -18,7 +18,7 @@ $title = "Vidros de controle solar, proteção solar - Linde Vidros";
 $description = "Os Vidros de controle solar trazem proteção solar para sua obra, protegendo você e seus móveis do calor e dos raios UV" . $tg;
 $keywords = "Vidro de Controle Solar, Controle Solar, Proteção Solar, Proteção UV, Linde Vidros, distribuidora de vidro, beneficiadora de vidro, fábrica de vidro";
 
-$og_url = "http://www.lindevidros.com.br/vidro-controle-solar";
+$og_url = "https://www.lindevidros.com.br/vidro-controle-solar";
 $og_name = "Vidros de Controle Solar";
 
 $submenu_id = "E-VCS";
@@ -39,26 +39,26 @@ require_once ("includes/links.php");
 <?php //include_once ("includes/logo.php"); ?>
 
 <div class="container-fluid">
-	<div class="row" id="titulo">
-    	<div class="col-md-12">
-        	<div class="container">
-            	<div class="row">
-                    <div class="col-md-12">
-                    	<h1>Vidro de Controle Solar</h1>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="row">
+        <div class="col-12 bg-light py-4 border-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="text-azul-linde">Vidro de Controle Solar</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <div class="container">
-    <div class="row" id="img-pg">
-    	<div class="col-md-12">
-        	<img src="img/img_controle_solar.jpg" alt="Vidro de Controle Solar" class="img-rounded img-responsive">
+    <div class="row mt-3">
+    	<div class="col-12">
+        	<img src="img/img_controle_solar.jpg" alt="Vidro de Controle Solar" class="rounded img-fluid">
         </div>
     </div>
-    <div class="row" id="conteudo">
+    <div class="row my-4">
         <div class="col-md-9">
             <p class="text-justify">Os <strong>vidros de controle solar</strong>, também chamado de vidros de proteção solar, são vidros que impedem a transmissão de calor pelos raios do sol e filtram os raios UV, mantendo o ambiente interno com uma temperatura mais agradável e livre de raios nocivos e que causam desbotamento de cores.</p>
             
@@ -81,29 +81,29 @@ require_once ("includes/links.php");
         </div>
     </div>
     
-    <div class="row" id="conteudo">
-    	<div class="col-md-12">
+    <div class="row my-4">
+    	<div class="col-12">
         	<hr>
             
             <div class="row">
-                <div class="col-xs-4 col-md-2">
-                    <a href="img/produtos/grande/controle_solar1.jpg" rel="shadowbox[vocation]" title="Vidro de Controle Solar" class="thumbnail">
-                    <img src="img/produtos/miniatura/controle_solar1.jpg" alt="Vidro de Controle Solar">
+                <div class="col-4 col-md-2 mb-2">
+                    <a href="img/produtos/grande/controle_solar1.jpg" rel="shadowbox[vocation]" title="Vidro de Controle Solar">
+                        <img src="img/produtos/miniatura/controle_solar1.jpg" alt="Vidro de Controle Solar" class="img-fluid img-thumbnail">
                     </a>
                 </div>
-                <div class="col-xs-4 col-md-2">
-                    <a href="img/produtos/grande/controle_solar2.jpg" rel="shadowbox[vocation]" title="Vidro de Controle Solar" class="thumbnail">
-                    <img src="img/produtos/miniatura/controle_solar2.jpg" alt="Vidro de Controle Solar">
+                <div class="col-4 col-md-2 mb-2">
+                    <a href="img/produtos/grande/controle_solar2.jpg" rel="shadowbox[vocation]" title="Vidro de Controle Solar">
+                        <img src="img/produtos/miniatura/controle_solar2.jpg" alt="Vidro de Controle Solar" class="img-fluid img-thumbnail">
                     </a>
                 </div>
-                <div class="col-xs-4 col-md-2">
-                    <a href="img/produtos/grande/controle_solar3.jpg" rel="shadowbox[vocation]" title="Vidro de Controle Solar" class="thumbnail">
-                    <img src="img/produtos/miniatura/controle_solar3.jpg" alt="Vidro de Controle Solar">
+                <div class="col-4 col-md-2 mb-2">
+                    <a href="img/produtos/grande/controle_solar3.jpg" rel="shadowbox[vocation]" title="Vidro de Controle Solar">
+                        <img src="img/produtos/miniatura/controle_solar3.jpg" alt="Vidro de Controle Solar" class="img-fluid img-thumbnail">
                     </a>
                 </div>
-                <div class="col-xs-4 col-md-2">
-                    <a href="img/produtos/grande/controle_solar4.jpg" rel="shadowbox[vocation]" title="Vidro de Controle Solar" class="thumbnail">
-                    <img src="img/produtos/miniatura/controle_solar4.jpg" alt="Vidro de Controle Solar">
+                <div class="col-4 col-md-2 mb-2">
+                    <a href="img/produtos/grande/controle_solar4.jpg" rel="shadowbox[vocation]" title="Vidro de Controle Solar">
+                        <img src="img/produtos/miniatura/controle_solar4.jpg" alt="Vidro de Controle Solar" class="img-fluid img-thumbnail">
                     </a>
                 </div>
             </div>

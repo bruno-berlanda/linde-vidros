@@ -1,75 +1,59 @@
 <?php
 require_once ("funcoes/conexao.php");
 
-$consulta_slides = mysqli_query ($conexao, "SELECT foto, titulo, frase, link FROM admin_slides WHERE ativo='S' ORDER BY seq") or die (mysqli_error());
+$c_slides = mysqli_query ($conexao, "SELECT foto, titulo, frase, link FROM admin_slides WHERE ativo='S' ORDER BY seq") or die (mysqli_error($conexao));
 
-$conta_slides = mysqli_num_rows ($consulta_slides);
-
-if ($conta_slides > 0) {
+if (mysqli_num_rows ($c_slides) > 0) {
 ?>
 
 <div class="container-fluid">
 	<div class="row" id="slide">
-        <div class="col-md-12" id="slide-imagens">
-			<div id="carousel-linde" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
+        <div class="col-12 p-0">
+            <div id="carouselLinde" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-indicators">
                     <?php
-					for ($i = 0; $i < $conta_slides; $i++) {
-						if ($i == 0) {
-					?>
-                    <li data-target="#carousel-linde" data-slide-to="<?php echo $i; ?>" class="active"></li>
-                    <?php
-						}
-						else {
-					?>
-                    <li data-target="#carousel-linde" data-slide-to="<?php echo $i; ?>"></li>
-                    <?php		
-						}
-					}
-					?>
-                </ol>
-                
-                <div class="carousel-inner" role="listbox">
-                    <?php
-					$s = 0;
-					
-					while ($dados_slides = mysqli_fetch_array ($consulta_slides)) {
-						$slide_foto 	= $dados_slides['foto'];
-						$slide_titulo 	= $dados_slides['titulo'];
-						$slide_frase 	= $dados_slides['frase'];
-						$slide_link 	= $dados_slides['link'];
-						
-						if ($slide_titulo != "") {
-							$slide_titulo_ok = $slide_titulo;	
-						}
-						else {
-							$slide_titulo_ok = "";
-						}
-						
-						$s++;
-					?>
-                    <div class="item<?php if ($s == 1) { echo " active"; } ?>">
-                    	<?php if ($slide_link != "") { ?><a href="<?php echo $slide_link; ?>" title="<?php echo $slide_titulo_ok; ?>"><?php } ?>
-                        <img src="img/slide/<?php echo $slide_foto; ?>" alt="<?php echo $slide_titulo_ok; ?>">
-                        <?php if ($slide_link != "") { ?></a><?php } ?>
-                        <div class="carousel-caption">
-                        	<h3 class="hidden-xs"><?php echo $slide_titulo_ok; ?></h3>
-                            <p><?php echo $slide_frase; ?></p>
-                        </div>
-                    </div>
-                    <?php
-					}
-					?>
+                    for ($i = 0; $i < mysqli_num_rows ($c_slides); $i++) {
+                        if ($i == 0) {
+                            ?>
+                            <button type="button" data-bs-target="#carouselLinde" data-bs-slide-to="<?php echo $i; ?>" class="active" aria-current="true" aria-label="Slide <?php echo $i + 1; ?>"></button>
+                            <?php
+                        }
+                        else {
+                            ?>
+                            <button type="button" data-bs-target="#carouselLinde" data-bs-slide-to="<?php echo $i; ?>" aria-label="Slide <?php echo $i + 1; ?>"></button>
+                            <?php
+                        }
+                    }
+                    ?>
                 </div>
-                
-                <a class="left carousel-control" href="#carousel-linde" role="button" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="right carousel-control" href="#carousel-linde" role="button" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
+                <div class="carousel-inner">
+                    <?php
+                    $s = 0;
+
+                    while ($d_slides = mysqli_fetch_array ($c_slides)) {
+                        ?>
+                        <div class="carousel-item<?php if ($s == 0) { echo " active"; } ?>" data-bs-interval="3000">
+                            <?php if ($d_slides['link'] != "") { ?><a href="<?php echo $d_slides['link']; ?>" title="<?php echo ($d_slides['titulo'] != '') ? $d_slides['titulo'] : ''; ?>"><?php } ?>
+                                <img src="img/slide/<?php echo $d_slides['foto']; ?>" class="d-block w-100" alt="<?php echo ($d_slides['titulo'] != '') ? $d_slides['titulo'] : ''; ?>">
+                            <?php if ($d_slides['link'] != "") { ?></a><?php } ?>
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5><?php echo ($d_slides['titulo'] != '') ? $d_slides['titulo'] : ''; ?></h5>
+                                <p><?php echo $d_slides['frase']; ?></p>
+                            </div>
+                        </div>
+                        <?php
+                        $s++;
+                    }
+                    ?>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselLinde" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselLinde" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
 	</div>

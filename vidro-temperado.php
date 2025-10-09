@@ -5,7 +5,7 @@
 require_once ("funcoes/conexao.php");
 
 /* Tag Google */
-$con_tag = mysqli_query ($conexao, "SELECT vidro_temperado AS tag FROM admin_tags WHERE id='1'") or die (mysqli_error());
+$con_tag = mysqli_query ($conexao, "SELECT vidro_temperado AS tag FROM admin_tags WHERE id='1'") or die (mysqli_error($conexao));
 	$d_tag = mysqli_fetch_array ($con_tag);
 		$tag = $d_tag['tag'];
 		
@@ -18,7 +18,7 @@ $title = "Vidro Temperado - Linde Vidros";
 $description = "Vidro Temperado, solução para vidraçarias, serralherias, esquadrias e construtoras" . $tg;
 $keywords = "vidro temperado, vidro tratamento térmico, vidro resistente, vidro de segurança, distribuidora de vidro, beneficiadora de vidro, fábrica de vidro";
 
-$og_url = "http://www.lindevidros.com.br/vidro-temperado";
+$og_url = "https://www.lindevidros.com.br/vidro-temperado";
 $og_name = "Vidro Temperado";
 
 $submenu_id = "E-VT";
@@ -39,26 +39,26 @@ require_once ("includes/links.php");
 <?php //include_once ("includes/logo.php"); ?>
 
 <div class="container-fluid">
-	<div class="row" id="titulo">
-    	<div class="col-md-12">
-        	<div class="container">
-            	<div class="row">
-                    <div class="col-md-12">
-                    	<h1>Vidro Temperado</h1>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="row">
+        <div class="col-12 bg-light py-4 border-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="text-azul-linde">Vidro Temperado</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <div class="container">
-    <div class="row" id="img-pg">
-    	<div class="col-md-12">
-        	<img src="img/img_temperado.jpg" alt="Vidro Temperado" class="img-rounded img-responsive">
+    <div class="row mt-3">
+    	<div class="col-12">
+        	<img src="img/img_temperado.jpg" alt="Vidro Temperado" class="rounded img-fluid">
         </div>
     </div>
-    <div class="row" id="conteudo">
+    <div class="row my-4">
         <div class="col-md-9">
 			<h2>Vidro Temperado, o que é?</h2>
             
@@ -108,10 +108,10 @@ require_once ("includes/links.php");
             <h3>Cores Especiais</h3>
             
             <ul>
-            	<li><a href="<?php echo $l_habitat; ?>" title="Vidro Habitat">Vidro Habitat</a></li>
-                <li><a href="<?php echo $l_refletivo; ?>" title="Vidro Refletivo">Vidro Refletivo</a></li>
-                <li><a href="<?php echo $l_texturizado; ?>" title="Vidro Texturizado">Vidro Texturizado</a></li>
-                <li><a href="<?php echo $l_extra; ?>" title="Vidro Extra Clear">Vidro Extra Clear</a></li>
+            	<li><a href="<?php echo $l_habitat; ?>" title="Vidro Habitat" class="link-underline link-underline-opacity-0">Vidro Habitat</a></li>
+                <li><a href="<?php echo $l_refletivo; ?>" title="Vidro Refletivo" class="link-underline link-underline-opacity-0">Vidro Refletivo</a></li>
+                <li><a href="<?php echo $l_texturizado; ?>" title="Vidro Texturizado" class="link-underline link-underline-opacity-0">Vidro Texturizado</a></li>
+                <li><a href="<?php echo $l_extra; ?>" title="Vidro Extra Clear" class="link-underline link-underline-opacity-0">Vidro Extra Clear</a></li>
             </ul>
             
             <br>
@@ -127,39 +127,39 @@ require_once ("includes/links.php");
         </div>
     </div>
     
-    <div class="row" id="conteudo">
-    	<div class="col-md-12">
+    <div class="row my-4">
+    	<div class="col-12">
         	<hr>
             
             <div class="row">
-                <div class="col-xs-4 col-md-2">
-                    <a href="img/produtos/grande/temperado1.jpg" rel="shadowbox[vocation]" title="Vidro Temperado" class="thumbnail">
-                    <img src="img/produtos/miniatura/temperado1.jpg" alt="Vidro Temperado">
+                <div class="col-4 col-md-2 mb-2">
+                    <a href="img/produtos/grande/temperado1.jpg" rel="shadowbox[vocation]" title="Vidro Temperado">
+                        <img src="img/produtos/miniatura/temperado1.jpg" alt="Vidro Temperado" class="img-fluid img-thumbnail">
                     </a>
                 </div>
-                <div class="col-xs-4 col-md-2">
-                    <a href="img/produtos/grande/temperado2.jpg" rel="shadowbox[vocation]" title="Vidro Temperado" class="thumbnail">
-                    <img src="img/produtos/miniatura/temperado2.jpg" alt="Vidro Temperado">
+                <div class="col-4 col-md-2 mb-2">
+                    <a href="img/produtos/grande/temperado2.jpg" rel="shadowbox[vocation]" title="Vidro Temperado">
+                        <img src="img/produtos/miniatura/temperado2.jpg" alt="Vidro Temperado" class="img-fluid img-thumbnail">
                     </a>
                 </div>
-                <div class="col-xs-4 col-md-2">
-                    <a href="img/produtos/grande/temperado3.jpg" rel="shadowbox[vocation]" title="Vidro Temperado" class="thumbnail">
-                    <img src="img/produtos/miniatura/temperado3.jpg" alt="Vidro Temperado">
+                <div class="col-4 col-md-2 mb-2">
+                    <a href="img/produtos/grande/temperado3.jpg" rel="shadowbox[vocation]" title="Vidro Temperado">
+                        <img src="img/produtos/miniatura/temperado3.jpg" alt="Vidro Temperado" class="img-fluid img-thumbnail">
                     </a>
                 </div>
-                <div class="col-xs-4 col-md-2">
-                    <a href="img/produtos/grande/temperado4.jpg" rel="shadowbox[vocation]" title="Vidro Temperado" class="thumbnail">
-                    <img src="img/produtos/miniatura/temperado4.jpg" alt="Vidro Temperado">
+                <div class="col-4 col-md-2 mb-2">
+                    <a href="img/produtos/grande/temperado4.jpg" rel="shadowbox[vocation]" title="Vidro Temperado">
+                        <img src="img/produtos/miniatura/temperado4.jpg" alt="Vidro Temperado" class="img-fluid img-thumbnail">
                     </a>
                 </div>
-                <div class="col-xs-4 col-md-2">
-                    <a href="img/produtos/grande/temperado5.jpg" rel="shadowbox[vocation]" title="Vidro Temperado" class="thumbnail">
-                    <img src="img/produtos/miniatura/temperado5.jpg" alt="Vidro Temperado">
+                <div class="col-4 col-md-2 mb-2">
+                    <a href="img/produtos/grande/temperado5.jpg" rel="shadowbox[vocation]" title="Vidro Temperado">
+                        <img src="img/produtos/miniatura/temperado5.jpg" alt="Vidro Temperado" class="img-fluid img-thumbnail">
                     </a>
                 </div>
-                <div class="col-xs-4 col-md-2">
-                    <a href="img/produtos/grande/temperado6.jpg" rel="shadowbox[vocation]" title="Vidro Temperado" class="thumbnail">
-                    <img src="img/produtos/miniatura/temperado6.jpg" alt="Vidro Temperado">
+                <div class="col-4 col-md-2 mb-2">
+                    <a href="img/produtos/grande/temperado6.jpg" rel="shadowbox[vocation]" title="Vidro Temperado">
+                        <img src="img/produtos/miniatura/temperado6.jpg" alt="Vidro Temperado" class="img-fluid img-thumbnail">
                     </a>
                 </div>
             </div>

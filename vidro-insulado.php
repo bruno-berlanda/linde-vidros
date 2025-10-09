@@ -5,7 +5,7 @@
 require_once ("funcoes/conexao.php");
 
 /* Tag Google */
-$con_tag = mysqli_query ($conexao, "SELECT vidro_insulado AS tag FROM admin_tags WHERE id='1'") or die (mysqli_error());
+$con_tag = mysqli_query ($conexao, "SELECT vidro_insulado AS tag FROM admin_tags WHERE id='1'") or die (mysqli_error($conexao));
 	$d_tag = mysqli_fetch_array ($con_tag);
 		$tag = $d_tag['tag'];
 		
@@ -18,7 +18,7 @@ $title = "Vidro Insulado, proteção térmica e acústica - Linde Vidros";
 $description = "A solução mais avançada para melhorar o desempenho térmico e acústico residencial, vidro insulado" . $tg;
 $keywords = "Vidro Insulado, Vidros Insulado, Duraseal, Desempenho Têrmico, Acústico, Linha Ekoglass, distribuidora de vidro, beneficiadora de vidro, fábrica de vidro";
 
-$og_url = "http://www.lindevidros.com.br/vidro-insulado";
+$og_url = "https://www.lindevidros.com.br/vidro-insulado";
 $og_name = "Vidro Insulado";
 
 $submenu_id = "E-VI";
@@ -39,26 +39,26 @@ require_once ("includes/links.php");
 <?php //include_once ("includes/logo.php"); ?>
 
 <div class="container-fluid">
-	<div class="row" id="titulo">
-    	<div class="col-md-12">
-        	<div class="container">
-            	<div class="row">
-                    <div class="col-md-12">
-                    	<h1>Vidro Insulado</h1>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="row">
+        <div class="col-12 bg-light py-4 border-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="text-azul-linde">Vidro Insulado</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <div class="container">
-    <div class="row" id="img-pg">
+    <div class="row mt-3">
     	<div class="col-md-12">
-        	<img src="img/img_insulado.jpg" alt="Vidro Insulado" class="img-rounded img-responsive">
+        	<img src="img/img_insulado.jpg" alt="Vidro Insulado" class="rounded img-fluid">
         </div>
     </div>
-    <div class="row" id="conteudo">
+    <div class="row my-4">
         <div class="col-md-9">
             <p class="text-justify">O <strong>vidro insulado</strong> é uma solução formada por duas placas de vidro plano paralelas, separadas por um espaçador, com as bordas hermeticamente seladas ao longo de todo seu perímetro, formando em seu interior uma câmera estanque e desidratada. São ideais para obter conforto térmico, já que há a redução da troca de calor e atenuação sonora dos vidros com o ambiente e ao mesmo tempo conseguir o máximo de luz natural.</p>
             
@@ -72,7 +72,7 @@ require_once ("includes/links.php");
             
             <div class="row">
             	<div class="col-md-3">
-                	<p class="text-danger"><i class="fas fa-thermometer-half"></i> <strong>TÉRMICO</strong></p>
+                	<p><i class="fa-solid fa-temperature-half fa-fw text-secondary"></i> <strong class="text-primary">TÉRMICO</strong></p>
                     
                     <ul>
                     	<li>Aumento de mais de 100% de isolamento térmico</li>
@@ -81,7 +81,7 @@ require_once ("includes/links.php");
                     </ul>
                 </div>
                 <div class="col-md-3">
-                	<p class="text-danger"><i class="fas fa-unlock"></i> <strong>SEGURANÇA</strong></p>
+                	<p><i class="fa-solid fa-shield-halved fa-fw text-secondary"></i> <strong class="text-primary">SEGURANÇA</strong></p>
                     
                     <ul>
                     	<li>Segurança contra cortes e acidentes (quando laminado ou temperado)</li>
@@ -89,7 +89,7 @@ require_once ("includes/links.php");
                     </ul>
                 </div>
                 <div class="col-md-3">
-                	<p class="text-danger"><i class="fas fa-volume-up"></i> <strong>ACÚSTICO</strong></p>
+                	<p><i class="fa-solid fa-volume-high fa-fw text-secondary"></i> <strong class="text-primary">ACÚSTICO</strong></p>
                     
                     <ul>
                     	<li>Melhora o desempenho acústico</li>
@@ -98,7 +98,7 @@ require_once ("includes/links.php");
                     </ul>
                 </div>
                 <div class="col-md-3">
-                	<p class="text-danger"><i class="fas fa-sun"></i> <strong>PROTEÇÃO SOLAR</strong></p>
+                	<p><i class="fa-solid fa-sun fa-fw text-secondary"></i> <strong class="text-primary">PROTEÇÃO SOLAR</strong></p>
                     
                     <ul>
                     	<li>Diminui em até 70% as perdas de calor através do vidro, economizando energia do ar-condicionado</li>
@@ -115,15 +115,15 @@ require_once ("includes/links.php");
             
             <div class="row">
             	<div class="col-md-4">
-                	<img src="img/produtos/insulado_duraseal.jpg" alt="Vidro Insulado" class="img-responsive img-rounded">
+                	<img src="img/produtos/insulado_duraseal.jpg" alt="Vidro Insulado" class="img-fluid rounded">
                     <small>Duraseal</small>
                 </div>
                 <div class="col-md-4">
-                	<img src="img/produtos/insulado_triseal.jpg" alt="Vidro Insulado" class="img-responsive img-rounded">
+                	<img src="img/produtos/insulado_triseal.jpg" alt="Vidro Insulado" class="img-fluid rounded">
                     <small>Triseal</small>
                 </div>
                 <div class="col-md-4">
-                	<img src="img/produtos/insulado_aluminio.jpg" alt="Vidro Insulado" class="img-responsive img-rounded">
+                	<img src="img/produtos/insulado_aluminio.jpg" alt="Vidro Insulado" class="img-fluid rounded">
                     <small>Perfil de Alumínio</small>
                 </div>
             </div>
@@ -136,25 +136,25 @@ require_once ("includes/links.php");
             
             <p class="text-justify">A utilização do <em>Duraseal</em> como espaçador flexível orgânico garante o melhor desempenho térmico e acústico de sua janela, trata-se de um sistema espaçador versátil e de alta durabilidade, construído com a tecnologia de laminação composta na qual já possui em sua massa, o espaçador, o adesivo e o dessecante. O desenho único do Duraseal incorpora um reforço de polímero que garante superfícies e quinas lisas e limpas para o melhor acabamento. Por possuir todos os componentes necessários à aplicação e vedação embutidos em um único produto, a utilização do espaçador Duraseal favorece a eficiência do processo produtivo dos vidros duplos, além de aumentar a vida útil do produto.</p>
             
-            <dl class="dl-horizontal">
-                <dt>Espaçador embutido</dt>
-                <dd>Espaçador único, composto por itens flexíveis e ao mesmo tempo incompressíveis e estáveis.</dd>
+            <dl class="row">
+                <dt class="col-12 col-md-3">Espaçador embutido</dt>
+                <dd class="col-12 col-md-9">Espaçador único, composto por itens flexíveis e ao mesmo tempo incompressíveis e estáveis.</dd>
                 
-                <dt>Adesivos de juntas</dt>
-                <dd>Adesivo de alto rendimento que oferece resistência excepcional à transmissão de gases e vapores de umidade.</dd>
+                <dt class="col-12 col-md-3">Adesivos de juntas</dt>
+                <dd class="col-12 col-md-9">Adesivo de alto rendimento que oferece resistência excepcional à transmissão de gases e vapores de umidade.</dd>
                 
-                <dt>Recobrimento dessecante</dt>
-                <dd>O dessecante concentrado na camada superior absorve a umidade de dentro da câmara.</dd>
+                <dt class="col-12 col-md-3">Recobrimento dessecante</dt>
+                <dd class="col-12 col-md-9">O dessecante concentrado na camada superior absorve a umidade de dentro da câmara.</dd>
                 
-                <dt>Aplicação básica</dt>
-                <dd>Para aplicações na produção de sistemas de Vidro Duplo Ekoglass com processos controlados e fabricados com selagem quente e por compressão. Desenhado com sistemas de selagem simples, Duraseal também pode ser utilizado com sistemas de selagem duplos.</dd>
+                <dt class="col-12 col-md-3">Aplicação básica</dt>
+                <dd class="col-12 col-md-9">Para aplicações na produção de sistemas de Vidro Duplo Ekoglass com processos controlados e fabricados com selagem quente e por compressão. Desenhado com sistemas de selagem simples, Duraseal também pode ser utilizado com sistemas de selagem duplos.</dd>
             </dl>
             
             <br>
             
             <div class="alert alert-info text-center" role="alert">
-            	<i class="far fa-thumbs-up fa-4x"></i>
-                <br>
+                <i class="fa-regular fa-thumbs-up fa-4x"></i>
+                <br><br>
                 A Linde Vidros é certificada no processo de fabricação do <strong>Duraseal</strong> pela <em>Quanex</em>.
             </div>
             
@@ -181,19 +181,19 @@ require_once ("includes/links.php");
         </div>
     </div>
     
-    <div class="row" id="conteudo">
-    	<div class="col-md-12">
+    <div class="row my-4">
+    	<div class="col-12">
         	<hr>
             
             <div class="row">
-                <div class="col-xs-4 col-md-2">
-                    <a href="img/produtos/grande/insulado1.jpg" rel="shadowbox[vocation]" title="Vidro Insulado" class="thumbnail">
-                    <img src="img/produtos/miniatura/insulado1.jpg" alt="Vidro Insulado">
+                <div class="col-4 col-md-2 mb-2">
+                    <a href="img/produtos/grande/insulado1.jpg" rel="shadowbox[vocation]" title="Vidro Insulado">
+                        <img src="img/produtos/miniatura/insulado1.jpg" alt="Vidro Insulado" class="img-fluid img-thumbnail">
                     </a>
                 </div>
-                <div class="col-xs-4 col-md-2">
-                    <a href="img/produtos/grande/insulado2.jpg" rel="shadowbox[vocation]" title="Vidro Insulado" class="thumbnail">
-                    <img src="img/produtos/miniatura/insulado2.jpg" alt="Vidro Insulado">
+                <div class="col-4 col-md-2 mb-2">
+                    <a href="img/produtos/grande/insulado2.jpg" rel="shadowbox[vocation]" title="Vidro Insulado">
+                        <img src="img/produtos/miniatura/insulado2.jpg" alt="Vidro Insulado" class="img-fluid img-thumbnail">
                     </a>
                 </div>
             </div>

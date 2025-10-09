@@ -5,7 +5,7 @@
 require_once ("funcoes/conexao.php");
 
 /* Tag Google */
-$con_tag = mysqli_query ($conexao, "SELECT vidro_habitat AS tag FROM admin_tags WHERE id='1'") or die (mysqli_error());
+$con_tag = mysqli_query ($conexao, "SELECT vidro_habitat AS tag FROM admin_tags WHERE id='1'") or die (mysqli_error($conexao));
 	$d_tag = mysqli_fetch_array ($con_tag);
 		$tag = $d_tag['tag'];
 		
@@ -18,7 +18,7 @@ $title = "Vidros Habitat, proteção solar para residências - Linde Vidros";
 $description = "Os Vidros Habitat trazem proteção solar para sua residência, protegendo você e seus móveis do calor e dos raios UV" . $tg;
 $keywords = "Vidro Habitat, Vidros Habitat, Proteção Solar, Proteção UV, Linde Vidros, distribuidora de vidro, beneficiadora de vidro, fábrica de vidro";
 
-$og_url = "http://www.lindevidros.com.br/vidro-habitat";
+$og_url = "https://www.lindevidros.com.br/vidro-habitat";
 $og_name = "Vidros Habitat";
 
 $submenu_id = "E-VH";
@@ -39,28 +39,28 @@ require_once ("includes/links.php");
 <?php //include_once ("includes/logo.php"); ?>
 
 <div class="container-fluid">
-	<div class="row" id="titulo">
-    	<div class="col-md-12">
-        	<div class="container">
-            	<div class="row">
-                    <div class="col-md-12">
-                    	<h1>Vidro Habitat</h1>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="row">
+        <div class="col-12 bg-light py-4 border-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="text-azul-linde">Vidro Habitat</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <div class="container">
-    <div class="row" id="img-pg">
+    <div class="row mt-3">
     	<div class="col-md-12">
-        	<img src="img/img_habitat.jpg" alt="Vidro Habitat" class="img-rounded img-responsive">
+        	<img src="img/img_habitat.jpg" alt="Vidro Habitat" class="rounded img-fluid">
         </div>
     </div>
-    <div class="row" id="conteudo">
+    <div class="row my-4">
         <div class="col-md-9">
-			<img src="img/habitat_cebrace.png" alt="Vidro Habitat" class="img-rounded" id="img-esquerda">
+			<img src="img/habitat_cebrace.png" alt="Vidro Habitat" class="img-fluid float-start me-4 mb-4">
             
             <p class="text-justify">O <strong>Vidro Habitat</strong> traz uma segurança para você, sua casa e seus móveis e revestimentos contra o calor e os raios UV.</p>
             
@@ -73,7 +73,7 @@ require_once ("includes/links.php");
             <br>
 
             <div class="alert alert-warning text-center" role="alert">
-                <i class="fas fa-sun fa-3x"></i>
+                <i class="fa-solid fa-sun fa-3x"></i>
                 <br><br>
                 Saiba mais sobre os <a href="vidro-controle-solar" title="Vidro de Controle Solar" class="text-danger">Vidros de Controle Solar</a>.
             </div>
@@ -147,14 +147,14 @@ require_once ("includes/links.php");
                     <table class="table table-bordered">
                         <tr>
                             <td rowspan="2">Características da Linha Habitat Refletiva</td>
-                            <td colspan="4" class="text-center bg-warning"><strong>HABITAT</strong></td>
+                            <td colspan="4" class="text-center"><strong>HABITAT</strong></td>
                             <td class="text-center">Vidro Comum</td>
                         </tr>
                         <tr>
-                            <td width="15%" class="text-center bg-warning"><strong>Cinza</strong></td>
-                            <td width="15%" class="text-center bg-warning"><strong>Azul</strong></td>
-                            <td width="15%" class="text-center bg-warning"><strong>Esmeralda</strong></td>
-                            <td width="15%" class="text-center bg-warning"><strong>Champanhe</strong></td>
+                            <td width="15%" class="text-center"><strong>Cinza</strong></td>
+                            <td width="15%" class="text-center"><strong>Azul</strong></td>
+                            <td width="15%" class="text-center"><strong>Esmeralda</strong></td>
+                            <td width="15%" class="text-center"><strong>Champanhe</strong></td>
                             <td width="15%" class="text-center">Incolor</td>
                         </tr>
                         <tr>
@@ -220,12 +220,12 @@ require_once ("includes/links.php");
                     <table class="table table-bordered">
                         <tr>
                             <td rowspan="2">Características da Linha Habitat Neutra</td>
-                            <td colspan="2" class="text-center bg-warning"><strong>HABITAT</strong></td>
+                            <td colspan="2" class="text-center"><strong>HABITAT</strong></td>
                             <td class="text-center">Vidro Comum</td>
                         </tr>
                         <tr>
-                            <td width="15%" class="text-center bg-warning"><strong>Incolor</strong></td>
-                            <td width="15%" class="text-center bg-warning"><strong>Cinza</strong></td>
+                            <td width="15%" class="text-center"><strong>Incolor</strong></td>
+                            <td width="15%" class="text-center"><strong>Cinza</strong></td>
                             <td width="15%" class="text-center">Incolor</td>
                         </tr>
                         <tr>
@@ -253,8 +253,8 @@ require_once ("includes/links.php");
             <p>Dados referentes a vidros na espessura de 4 mm. Quando laminado, o desempenho de proteção UV do produto é de 99,6%</p>
 
             <hr>
-            
-            <div class="embed-responsive embed-responsive-16by9">
+
+            <div class="ratio ratio-16x9">
         		<iframe width="100%" height="100%" src="https://www.youtube.com/embed/6RqjDqM8FT8" frameborder="0" allowfullscreen></iframe>
         	</div>
         </div>
@@ -263,39 +263,39 @@ require_once ("includes/links.php");
         </div>
     </div>
     
-    <div class="row" id="conteudo">
-    	<div class="col-md-12">
+    <div class="row my-4">
+    	<div class="col-12">
         	<hr>
             
             <div class="row">
-                <div class="col-xs-4 col-md-2">
-                    <a href="img/produtos/grande/habitat1.jpg" rel="shadowbox[vocation]" title="Vidro Habitat" class="thumbnail">
-                    <img src="img/produtos/miniatura/habitat1.jpg" alt="Vidro Habitat">
+                <div class="col-4 col-md-2 mb-2">
+                    <a href="img/produtos/grande/habitat1.jpg" rel="shadowbox[vocation]" title="Vidro Habitat">
+                        <img src="img/produtos/miniatura/habitat1.jpg" alt="Vidro Habitat" class="img-fluid img-thumbnail">
                     </a>
                 </div>
-                <div class="col-xs-4 col-md-2">
-                    <a href="img/produtos/grande/habitat2.jpg" rel="shadowbox[vocation]" title="Vidro Habitat" class="thumbnail">
-                    <img src="img/produtos/miniatura/habitat2.jpg" alt="Vidro Habitat">
+                <div class="col-4 col-md-2 mb-2">
+                    <a href="img/produtos/grande/habitat2.jpg" rel="shadowbox[vocation]" title="Vidro Habitat">
+                        <img src="img/produtos/miniatura/habitat2.jpg" alt="Vidro Habitat" class="img-fluid img-thumbnail">
                     </a>
                 </div>
-                <div class="col-xs-4 col-md-2">
-                    <a href="img/produtos/grande/habitat3.jpg" rel="shadowbox[vocation]" title="Vidro Habitat" class="thumbnail">
-                    <img src="img/produtos/miniatura/habitat3.jpg" alt="Vidro Habitat">
+                <div class="col-4 col-md-2 mb-2">
+                    <a href="img/produtos/grande/habitat3.jpg" rel="shadowbox[vocation]" title="Vidro Habitat">
+                        <img src="img/produtos/miniatura/habitat3.jpg" alt="Vidro Habitat" class="img-fluid img-thumbnail">
                     </a>
                 </div>
-                <div class="col-xs-4 col-md-2">
-                    <a href="img/produtos/grande/habitat4.jpg" rel="shadowbox[vocation]" title="Vidro Habitat" class="thumbnail">
-                    <img src="img/produtos/miniatura/habitat4.jpg" alt="Vidro Habitat">
+                <div class="col-4 col-md-2 mb-2">
+                    <a href="img/produtos/grande/habitat4.jpg" rel="shadowbox[vocation]" title="Vidro Habitat">
+                        <img src="img/produtos/miniatura/habitat4.jpg" alt="Vidro Habitat" class="img-fluid img-thumbnail">
                     </a>
                 </div>
-                <div class="col-xs-4 col-md-2">
-                    <a href="img/produtos/grande/habitat5.jpg" rel="shadowbox[vocation]" title="Vidro Habitat" class="thumbnail">
-                    <img src="img/produtos/miniatura/habitat5.jpg" alt="Vidro Habitat">
+                <div class="col-4 col-md-2 mb-2">
+                    <a href="img/produtos/grande/habitat5.jpg" rel="shadowbox[vocation]" title="Vidro Habitat">
+                        <img src="img/produtos/miniatura/habitat5.jpg" alt="Vidro Habitat" class="img-fluid img-thumbnail">
                     </a>
                 </div>
-                <div class="col-xs-4 col-md-2">
-                    <a href="img/produtos/grande/habitat6.jpg" rel="shadowbox[vocation]" title="Vidro Habitat" class="thumbnail">
-                    <img src="img/produtos/miniatura/habitat6.jpg" alt="Vidro Habitat">
+                <div class="col-4 col-md-2 mb-2">
+                    <a href="img/produtos/grande/habitat6.jpg" rel="shadowbox[vocation]" title="Vidro Habitat">
+                        <img src="img/produtos/miniatura/habitat6.jpg" alt="Vidro Habitat" class="img-fluid img-thumbnail">
                     </a>
                 </div>
             </div>

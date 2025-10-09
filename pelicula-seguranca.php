@@ -5,7 +5,7 @@
 require_once ("funcoes/conexao.php");
 
 /* Tag Google */
-$con_tag = mysqli_query ($conexao, "SELECT pelicula AS tag FROM admin_tags WHERE id='1'") or die (mysqli_error());
+$con_tag = mysqli_query ($conexao, "SELECT pelicula AS tag FROM admin_tags WHERE id='1'") or die (mysqli_error($conexao));
 	$d_tag = mysqli_fetch_array ($con_tag);
 		$tag = $d_tag['tag'];
 		
@@ -18,7 +18,7 @@ $title = "Película de Segurança para Vidro - Linde Vidros";
 $description = "A película de segurança deixa seu vidro mais resistente e forte, proteção contra acidentes domésticos e roubos. Ideal em projetos residênciais, escritórios e box de banheiro" . $tg;
 $keywords = "";
 
-$og_url = "http://www.lindevidros.com.br/pelicula-seguranca";
+$og_url = "https://www.lindevidros.com.br/pelicula-seguranca";
 $og_name = "Película de Segurança";
 
 $submenu_id = "S-PS";
@@ -39,26 +39,26 @@ require_once ("includes/links.php");
 <?php //include_once ("includes/logo.php"); ?>
 
 <div class="container-fluid">
-	<div class="row" id="titulo">
-    	<div class="col-md-12">
-        	<div class="container">
-            	<div class="row">
-                    <div class="col-md-12">
-                    	<h1>Película de Segurança</h1>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="row">
+        <div class="col-12 bg-light py-4 border-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="text-azul-linde">Película de Segurança</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <div class="container">
-    <div class="row" id="img-pg">
-    	<div class="col-md-12">
-        	<img src="img/img_pelicula_seguranca.jpg" alt="Película de Segurança" class="img-rounded img-responsive">
+    <div class="row mt-3">
+    	<div class="col-12">
+        	<img src="img/img_pelicula_seguranca.jpg" alt="Película de Segurança" class="rounded img-fluid">
         </div>
     </div>
-    <div class="row" id="conteudo">
+    <div class="row my-4">
         <div class="col-md-9">
             <p class="text-justify">A <strong>película de segurança</strong> torna seu vidro mais resistente e forte contra vandalismo e proteção contra acidentes domésticos, proteja seu patrimônio e quem você ama.</p>
             
@@ -69,8 +69,8 @@ require_once ("includes/links.php");
             <br>
             
             <div class="alert alert-info text-center" role="alert">
-            	<i class="far fa-thumbs-up fa-4x"></i>
-                <br>
+                <i class="fa-regular fa-thumbs-up fa-4x"></i>
+                <br><br>
                 Utilize a <strong>Película de Segurança</strong> Linde Vidros e deixe sua obra com a mesma segurança de uma embaixada americana ou uma sede da ONU!
             </div>
             
@@ -97,7 +97,7 @@ require_once ("includes/links.php");
                     </ul>
                 </div>
                 <div class="col-md-6">
-                	<p class="text-center"><img src="img/pelicula_quebrada.png" alt="Película de Segurança" class="img-responsive"></p>
+                	<p class="text-center"><img src="img/pelicula_quebrada.png" alt="Película de Segurança" class="img-fluid"></p>
                     
                     <br>
                     
@@ -109,7 +109,7 @@ require_once ("includes/links.php");
             
             <p class="text-justify">A película é composta por 4 camadas:</p>
             
-            <p class="text-justify"><img src="img/pelicula_composicao.png" alt="Película de Segurança" class="img-responsive"></p>
+            <p class="text-justify"><img src="img/pelicula_composicao.png" alt="Película de Segurança" class="img-fluid"></p>
         </div>
         <div class="col-md-3">
 			<?php include_once ("includes/menu_servicos.php"); ?>

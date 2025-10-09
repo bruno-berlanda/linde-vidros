@@ -4,43 +4,12 @@ Arquivos Javascript
 <!-- jQuery -->
 <script src="js/jquery.min.js"></script>
 <!-- Scripts Bootstrap -->
-<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
 <!-- Máscaras Formulários -->
 <script src="js/jquery.mask.min.js"></script>
 
 <!-- reCaptcha -->
 <script src='https://www.google.com/recaptcha/api.js?hl=pt-BR'></script>
-
-<script type="text/javascript">
-$('.carousel').carousel({
-  interval: 4000
-})
-</script>
-
-<!-- Tooltip -->
-<script type="text/javascript">
-	$('#tooltip-linde').tooltip()
-	$('#tooltip-facebook1').tooltip()
-	$('#tooltip-facebook2').tooltip()
-	$('#tooltip-instagram1').tooltip()
-	$('#tooltip-instagram2').tooltip()
-	$('#tooltip-linkedin1').tooltip()
-	$('#tooltip-linkedin2').tooltip()
-	$('#tooltip-blog1').tooltip()
-	$('#tooltip-blog2').tooltip()
-	$('#tooltip-email1').tooltip()
-	$('#tooltip-cartoes').tooltip()
-	$('#tooltip-habitat').tooltip()
-	$('#tooltip-cor1').tooltip()
-	$('#tooltip-cor2').tooltip()
-	$('#tooltip-cor3').tooltip()
-	$('#tooltip-cor4').tooltip()
-	$('#tooltip-cor5').tooltip()
-	$('#tooltip-cor6').tooltip()
-	$('#tooltip-cor7').tooltip()
-	
-	$('#tooltip-merlin').tooltip()
-</script>
 
 <!-- Máscaras Formulários -->
 <script type="text/javascript">

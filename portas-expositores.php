@@ -5,7 +5,7 @@
 require_once ("funcoes/conexao.php");
 
 /* Tag Google */
-$con_tag = mysqli_query ($conexao, "SELECT portas_expositores AS tag FROM admin_tags WHERE id='1'") or die (mysqli_error());
+$con_tag = mysqli_query ($conexao, "SELECT portas_expositores AS tag FROM admin_tags WHERE id='1'") or die (mysqli_error($conexao));
 	$d_tag = mysqli_fetch_array ($con_tag);
 		$tag = $d_tag['tag'];
 		
@@ -18,7 +18,7 @@ $title = "Portas para Expositores - Linde Vidros";
 $description = "Portas para Expositores Verticais em perfil em PVC de alta resistência mecânica, disponível em diversas cores utilizando vidros baixo emissivos Low-E" . $tg;
 $keywords = "portas para expositores, portas para expositores verticais, vidro baixo emissivo";
 
-$og_url = "http://www.lindevidros.com.br/portas-expositores";
+$og_url = "https://www.lindevidros.com.br/portas-expositores";
 $og_name = "Portas para Expositores";
 
 $submenu_id = "R-PE";
@@ -39,21 +39,21 @@ require_once ("includes/links.php");
 <?php //include_once ("includes/logo.php"); ?>
 
 <div class="container-fluid">
-	<div class="row" id="titulo">
-    	<div class="col-md-12">
-        	<div class="container">
-            	<div class="row">
-                    <div class="col-md-12">
-                    	<h1>Portas para Expositores Verticais</h1>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="row">
+        <div class="col-12 bg-light py-4 border-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="text-azul-linde">Portas para Expositores Verticais</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <div class="container">
-    <div class="row" id="conteudo">
+    <div class="row my-4">
         <div class="col-md-9">
             <p class="text-justify">A Linde Vidros, inovando mais uma vez, traz para o mercado soluções em <strong>vidros Low-E</strong> temperados para aplicação em sistemas refrigerados. O <strong>vidro Low-E</strong> é melhor opção para aplicações que necessitam de controle da condensação passiva e bom desempenho térmico, com baixa emissividade, aparência incolor neutra, alta transparência e qualidade óptica possibilitando melhor visualização de alimentos e bebidas ideal para ser utilizado em portas de freezers e refrigeradores.</p>
             
@@ -86,7 +86,7 @@ require_once ("includes/links.php");
             
             <br>
             
-            <div class="well">
+            <div class="bg-light rounded p-3">
             	<p class="text-justify">A Linde Vidros produz vidros comuns e temperados planos baixo emissivos para sistemas refrigerados, podendo ser aplicados em adegas, gôndolas, freezers, expositores, ilhas, cervejeiras, balcões, vitrines, entre outros para média e baixa temperatura.</p>
             </div>
             

@@ -36,24 +36,24 @@
                             <br>
                             Rio Negro - PR &bull; CEP 83885-302
                             </p>
-                            <p class="lead"><a href="https://api.whatsapp.com/send?phone=554736414444"><i class="fab fa-whatsapp"></i> 47 3641 4444</a></p>
+                            <p class="lead"><a href="https://api.whatsapp.com/send?phone=554736414444"><i class="fa-brands fa-whatsapp fa-fw"></i> 47 3641 4444</a></p>
                         </address>
                         
                         <address>
-                            <a href="mailto:linde@lindevidros.com.br"><i class="fas fa-envelope"></i> linde@lindevidros.com.br</a>
+                            <a href="mailto:linde@lindevidros.com.br"><i class="fa-solid fa-envelope fa-fw"></i> linde@lindevidros.com.br</a>
                         </address>
                         
                         <br class="visible-xs">
                         
                         <p class="lead"><strong>Siga a Linde</strong></p>
-                        <a href="https://www.facebook.com/lindevidros" target="_blank" id="tooltip-facebook2" rel="tooltip" data-placement="bottom" title="Facebook">
-                        	<i class="fab fa-facebook fa-2x"></i>
+                        <a href="https://www.facebook.com/lindevidros" target="_blank" title="Facebook">
+                            <i class="fa-brands fa-facebook fa-fw fa-2x"></i>
                         </a>
-                        <a href="https://instagram.com/lindevidros" target="_blank" id="tooltip-instagram2" rel="tooltip" data-placement="bottom" title="Instagram">
-                        	<i class="fab fa-instagram fa-2x"></i>
+                        <a href="https://instagram.com/lindevidros" target="_blank" title="Instagram">
+                            <i class="fa-brands fa-instagram fa-fw fa-2x"></i>
                         </a>
-                        <a href="https://www.linkedin.com/company/linde-vidros/" target="_blank" id="tooltip-linkedin2" rel="tooltip" data-placement="bottom" title="Linkedin">
-                        	<i class="fab fa-linkedin fa-2x"></i>
+                        <a href="https://www.linkedin.com/company/linde-vidros/" target="_blank" title="Linkedin">
+                            <i class="fa-brands fa-linkedin fa-fw fa-2x"></i>
                         </a>
                     </div>
                     <div class="col-sm-3">
@@ -61,7 +61,7 @@
                         
                         <p class="lead"><strong>Distribuidora Autorizada</strong></p>
                         
-                        <p><a href="http://www.vidroshabitat.com.br" target="_blank" title="Vidros Habitat"><img src="img/rodape_habitat.png" alt="Vidros Habitat" class="img-responsive"></a></p>
+                        <p><a href="https://www.cebrace.com.br/habitat-by-cebrace/" target="_blank" title="Vidros Habitat"><img src="img/rodape_habitat.png" alt="Vidros Habitat" class="img-responsive"></a></p>
                         
                         <br>
                         <br>
@@ -78,7 +78,7 @@
 
 <div class="container-fluid">
 	<div class="row" id="desenvolvido">
-    	<div class="col-md-12">
+    	<div class="col-md-12 p-2">
         	<div class="container">
             	<div class="row">
                 	<div class="col-md-12">
@@ -90,4 +90,4 @@
     </div>
 </div>
 
-<a href="#top" class="glyphicon glyphicon-chevron-up"></a>
+<a href="#top"><i class="fa-solid fa-angle-up"></i></a>

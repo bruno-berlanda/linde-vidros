@@ -5,7 +5,7 @@
 require_once ("funcoes/conexao.php");
 
 /* Tag Google */
-$con_tag = mysqli_query ($conexao, "SELECT sentryglas AS tag FROM admin_tags WHERE id='1'") or die (mysqli_error());
+$con_tag = mysqli_query ($conexao, "SELECT sentryglas AS tag FROM admin_tags WHERE id='1'") or die (mysqli_error($conexao));
 	$d_tag = mysqli_fetch_array ($con_tag);
 		$tag = $d_tag['tag'];
 		
@@ -18,7 +18,7 @@ $title = "SentryGlas - Linde Vidros";
 $description = "Vidro SentryGlas, altíssima resistência e segurança, protege contra tempestades, impactos e explosões, proteção aos raios UV, transparência, eficiência energética" . $tg;
 $keywords = "sentryglas, vidro de proteção, vidro de segurança, vidro resistente, vidro anti-furto, distribuidora de vidro, beneficiadora de vidro, fábrica de vidro";
 
-$og_url = "http://www.lindevidros.com.br/sentryglas";
+$og_url = "https://www.lindevidros.com.br/sentryglas";
 $og_name = "SentryGlas";
 
 $submenu_id = "E-ST";
@@ -39,26 +39,26 @@ require_once ("includes/links.php");
 <?php //include_once ("includes/logo.php"); ?>
 
 <div class="container-fluid">
-	<div class="row" id="titulo">
-    	<div class="col-md-12">
-        	<div class="container">
-            	<div class="row">
-                    <div class="col-md-12">
-                    	<h1>SentryGlas</h1>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="row">
+        <div class="col-12 bg-light py-4 border-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="text-azul-linde">SentryGlas</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <div class="container">
-    <div class="row" id="img-pg">
+    <div class="row mt-3">
     	<div class="col-md-12">
-        	<img src="img/img_sentryglas.jpg" alt="SentryGlas" class="img-rounded img-responsive">
+        	<img src="img/img_sentryglas.jpg" alt="SentryGlas" class="rounded img-fluid">
         </div>
     </div>
-    <div class="row" id="conteudo">
+    <div class="row my-4">
         <div class="col-md-9">
             <p class="text-justify">Originalmente criado para mercados especializados, tais como o de vidros de alta segurança e o de janelas resistentes a furacões, os <a href="<?php echo $l_laminado; ?>" title="Vidro Laminado">vidros laminados</a> com <strong>SentryGlas</strong> são também especificados para vidros de alto desempenho.</p>
             
@@ -102,13 +102,13 @@ require_once ("includes/links.php");
             <br>
             
             <div class="alert alert-info text-center" role="alert">
-            	<i class="far fa-thumbs-up fa-4x"></i>
-                <br>
+                <i class="fa-regular fa-thumbs-up fa-4x"></i>
+                <br><br>
                 Ao contrário de um vidro com PVB comum, que ao se quebrar acaba caindo como um tapete, o vidro com SentryGlas mantem-se na vertical, evitando possíveis acidentes e garantindo segurança mesmo após quebrado.
                 
                 <br><br>
                 
-                <img src="img/produtos/sentryglas.jpg" alt="SentryGlas" class="img-rounded img-responsive">
+                <img src="img/produtos/sentryglas.jpg" alt="SentryGlas" class="rounded img-fluid">
             </div>
         </div>
         <div class="col-md-3">
@@ -116,24 +116,24 @@ require_once ("includes/links.php");
         </div>
     </div>
     
-    <div class="row" id="conteudo">
-    	<div class="col-md-12">
+    <div class="row my-4">
+    	<div class="col-12">
         	<hr>
             
             <div class="row">
-                <div class="col-xs-4 col-md-2">
-                    <a href="img/produtos/grande/sentryglas1.jpg" rel="shadowbox[vocation]" title="SentryGlas" class="thumbnail">
-                    <img src="img/produtos/miniatura/sentryglas1.jpg" alt="SentryGlas">
+                <div class="col-4 col-md-2 mb-2">
+                    <a href="img/produtos/grande/sentryglas1.jpg" rel="shadowbox[vocation]" title="SentryGlas">
+                        <img src="img/produtos/miniatura/sentryglas1.jpg" alt="SentryGlas" class="img-fluid img-thumbnail">
                     </a>
                 </div>
-                <div class="col-xs-4 col-md-2">
-                    <a href="img/produtos/grande/sentryglas2.jpg" rel="shadowbox[vocation]" title="SentryGlas" class="thumbnail">
-                    <img src="img/produtos/miniatura/sentryglas2.jpg" alt="SentryGlas">
+                <div class="col-4 col-md-2 mb-2">
+                    <a href="img/produtos/grande/sentryglas2.jpg" rel="shadowbox[vocation]" title="SentryGlas">
+                        <img src="img/produtos/miniatura/sentryglas2.jpg" alt="SentryGlas" class="img-fluid img-thumbnail">
                     </a>
                 </div>
-                <div class="col-xs-4 col-md-2">
-                    <a href="img/produtos/grande/sentryglas3.jpg" rel="shadowbox[vocation]" title="SentryGlas" class="thumbnail">
-                    <img src="img/produtos/miniatura/sentryglas3.jpg" alt="SentryGlas">
+                <div class="col-4 col-md-2 mb-2">
+                    <a href="img/produtos/grande/sentryglas3.jpg" rel="shadowbox[vocation]" title="SentryGlas">
+                        <img src="img/produtos/miniatura/sentryglas3.jpg" alt="SentryGlas" class="img-fluid img-thumbnail">
                     </a>
                 </div>
             </div>

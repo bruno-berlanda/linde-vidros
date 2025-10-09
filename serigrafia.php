@@ -5,7 +5,7 @@
 require_once ("funcoes/conexao.php");
 
 /* Tag Google */
-$con_tag = mysqli_query ($conexao, "SELECT serigrafia AS tag FROM admin_tags WHERE id='1'") or die (mysqli_error());
+$con_tag = mysqli_query ($conexao, "SELECT serigrafia AS tag FROM admin_tags WHERE id='1'") or die (mysqli_error($conexao));
 	$d_tag = mysqli_fetch_array ($con_tag);
 		$tag = $d_tag['tag'];
 		
@@ -18,7 +18,7 @@ $title = "Vidro Serigrafado - Linde Vidros";
 $description = "O Vidro Serigrafado tem resistência, durabilidade e acabamento nobre, ideal para cozinhas, salas de jantar e dormitórios. O Vidro Marmorizado amplia as opções de decoração de casas" . $tg;
 $keywords = "Vidro Serigrafado, Vidros Serigrafados, Serigrafia, Serigrafado, Serigrafados, Vidro Marmorizado, Linde Vidros";
 
-$og_url = "http://www.lindevidros.com.br/serigrafia";
+$og_url = "https://www.lindevidros.com.br/serigrafia";
 $og_name = "Vidro Serigrafado";
 
 $submenu_id = "S-SR";
@@ -39,26 +39,26 @@ require_once ("includes/links.php");
 <?php //include_once ("includes/logo.php"); ?>
 
 <div class="container-fluid">
-	<div class="row" id="titulo">
-    	<div class="col-md-12">
-        	<div class="container">
-            	<div class="row">
-                    <div class="col-md-12">
-                    	<h1>Serigrafia</h1>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="row">
+        <div class="col-12 bg-light py-4 border-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="text-azul-linde">Serigrafia</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <div class="container">
-    <div class="row" id="img-pg">
-    	<div class="col-md-12">
-        	<img src="img/img_serigrafado.jpg" alt="Vidro Serigrafado" class="img-rounded img-responsive">
+    <div class="row mt-3">
+    	<div class="col-12">
+        	<img src="img/img_serigrafado.jpg" alt="Vidro Serigrafado" class="rounded img-fluid">
         </div>
     </div>
-    <div class="row" id="conteudo">
+    <div class="row my-4">
         <div class="col-md-9">
             <p class="text-justify">O <strong>vidro serigrafado</strong> recebe uma camada de tinta cerâmica que no momento da tempera se fundem, resultando em resistência, durabilidade e um acabamento nobre. Devido a suas qualidades, pode ser utilizado até mesmo como revestimento de parede substituindo o azulejo.</p>
             
@@ -80,10 +80,10 @@ require_once ("includes/links.php");
             
             <br>
             
-            <div class="well well-large">
+            <div class="bg-light rounded p-4">
                 <div class="row">
                     <div class="col-xs-12 col-md-6">
-                        <p class="text-center"><img src="img/produtos/marmorizado.png" alt="Vidro Marmorizado" class="img-rounded img-responsive"></p>
+                        <p class="text-center"><img src="img/produtos/marmorizado.png" alt="Vidro Marmorizado" class="rounded img-fluid"></p>
                     </div>
                     <div class="col-xs-12 col-md-6">
                         <p class="lead">LANÇAMENTO!</p>
@@ -110,64 +110,64 @@ require_once ("includes/links.php");
             <h3>Vidro Serigrafado por Máquina</h3>
             
             <div class="row">
-                <div class="col-xs-4 col-md-2">
-                    <a href="img/produtos/grande/serigrafado_am3198.jpg" rel="shadowbox[vocation]" title="Vidro Serigrafado Amarelo" class="thumbnail">
-                    <img src="img/produtos/miniatura/serigrafado_am3198.jpg" alt="Vidro Serigrafado" id="img-colorida">
+                <div class="col-4 col-md-2 mb-2">
+                    <a href="img/produtos/grande/serigrafado_am3198.jpg" rel="shadowbox[vocation]" title="Vidro Serigrafado Amarelo">
+                        <img src="img/produtos/miniatura/serigrafado_am3198.jpg" alt="Vidro Serigrafado" id="img-colorida" class="img-fluid img-thumbnail">
                     </a>
                 </div>
-                <div class="col-xs-4 col-md-2">
-                    <a href="img/produtos/grande/serigrafado_az553.jpg" rel="shadowbox[vocation]" title="Vidro Serigrafado Azul" class="thumbnail">
-                    <img src="img/produtos/miniatura/serigrafado_az553.jpg" alt="Vidro Serigrafado" id="img-colorida">
+                <div class="col-4 col-md-2 mb-2">
+                    <a href="img/produtos/grande/serigrafado_az553.jpg" rel="shadowbox[vocation]" title="Vidro Serigrafado Azul">
+                        <img src="img/produtos/miniatura/serigrafado_az553.jpg" alt="Vidro Serigrafado" id="img-colorida" class="img-fluid img-thumbnail">
                     </a>
                 </div>
-                <div class="col-xs-4 col-md-2">
-                    <a href="img/produtos/grande/serigrafado_az554.jpg" rel="shadowbox[vocation]" title="Vidro Serigrafado Azul" class="thumbnail">
-                    <img src="img/produtos/miniatura/serigrafado_az554.jpg" alt="Vidro Serigrafado" id="img-colorida">
+                <div class="col-4 col-md-2 mb-2">
+                    <a href="img/produtos/grande/serigrafado_az554.jpg" rel="shadowbox[vocation]" title="Vidro Serigrafado Azul">
+                        <img src="img/produtos/miniatura/serigrafado_az554.jpg" alt="Vidro Serigrafado" id="img-colorida" class="img-fluid img-thumbnail">
                     </a>
                 </div>
-                <div class="col-xs-4 col-md-2">
-                    <a href="img/produtos/grande/serigrafado_br549.jpg" rel="shadowbox[vocation]" title="Vidro Serigrafado Jato" class="thumbnail">
-                    <img src="img/produtos/miniatura/serigrafado_br549.jpg" alt="Vidro Serigrafado" id="img-colorida">
+                <div class="col-4 col-md-2 mb-2">
+                    <a href="img/produtos/grande/serigrafado_br549.jpg" rel="shadowbox[vocation]" title="Vidro Serigrafado Jato">
+                        <img src="img/produtos/miniatura/serigrafado_br549.jpg" alt="Vidro Serigrafado" id="img-colorida" class="img-fluid img-thumbnail">
                     </a>
                 </div>
-                <div class="col-xs-4 col-md-2">
-                    <a href="img/produtos/grande/serigrafado_br550.jpg" rel="shadowbox[vocation]" title="Vidro Serigrafado Branco" class="thumbnail">
-                    <img src="img/produtos/miniatura/serigrafado_br550.jpg" alt="Vidro Serigrafado" id="img-colorida">
+                <div class="col-4 col-md-2 mb-2">
+                    <a href="img/produtos/grande/serigrafado_br550.jpg" rel="shadowbox[vocation]" title="Vidro Serigrafado Branco">
+                        <img src="img/produtos/miniatura/serigrafado_br550.jpg" alt="Vidro Serigrafado" id="img-colorida" class="img-fluid img-thumbnail">
                     </a>
                 </div>
-                <div class="col-xs-4 col-md-2">
-                    <a href="img/produtos/grande/serigrafado_fd6202.jpg" rel="shadowbox[vocation]" title="Vidro Serigrafado Fendi" class="thumbnail">
-                    <img src="img/produtos/miniatura/serigrafado_fd6202.jpg" alt="Vidro Serigrafado" id="img-colorida">
+                <div class="col-4 col-md-2 mb-2">
+                    <a href="img/produtos/grande/serigrafado_fd6202.jpg" rel="shadowbox[vocation]" title="Vidro Serigrafado Fendi">
+                        <img src="img/produtos/miniatura/serigrafado_fd6202.jpg" alt="Vidro Serigrafado" id="img-colorida" class="img-fluid img-thumbnail">
                     </a>
                 </div>
-                <div class="col-xs-4 col-md-2">
-                    <a href="img/produtos/grande/serigrafado_lr557.jpg" rel="shadowbox[vocation]" title="Vidro Serigrafado Laranja" class="thumbnail">
-                    <img src="img/produtos/miniatura/serigrafado_lr557.jpg" alt="Vidro Serigrafado" id="img-colorida">
+                <div class="col-4 col-md-2 mb-2">
+                    <a href="img/produtos/grande/serigrafado_lr557.jpg" rel="shadowbox[vocation]" title="Vidro Serigrafado Laranja">
+                        <img src="img/produtos/miniatura/serigrafado_lr557.jpg" alt="Vidro Serigrafado" id="img-colorida" class="img-fluid img-thumbnail">
                     </a>
                 </div>
-                <div class="col-xs-4 col-md-2">
-                    <a href="img/produtos/grande/serigrafado_pr555.jpg" rel="shadowbox[vocation]" title="Vidro Serigrafado Preto" class="thumbnail">
-                    <img src="img/produtos/miniatura/serigrafado_pr555.jpg" alt="Vidro Serigrafado" id="img-colorida">
+                <div class="col-4 col-md-2 mb-2">
+                    <a href="img/produtos/grande/serigrafado_pr555.jpg" rel="shadowbox[vocation]" title="Vidro Serigrafado Preto">
+                        <img src="img/produtos/miniatura/serigrafado_pr555.jpg" alt="Vidro Serigrafado" id="img-colorida" class="img-fluid img-thumbnail">
                     </a>
                 </div>
-                <div class="col-xs-4 col-md-2">
-                    <a href="img/produtos/grande/serigrafado_tb518.jpg" rel="shadowbox[vocation]" title="Vidro Serigrafado Tabaco" class="thumbnail">
-                    <img src="img/produtos/miniatura/serigrafado_tb518.jpg" alt="Vidro Serigrafado" id="img-colorida">
+                <div class="col-4 col-md-2 mb-2">
+                    <a href="img/produtos/grande/serigrafado_tb518.jpg" rel="shadowbox[vocation]" title="Vidro Serigrafado Tabaco">
+                        <img src="img/produtos/miniatura/serigrafado_tb518.jpg" alt="Vidro Serigrafado" id="img-colorida" class="img-fluid img-thumbnail">
                     </a>
                 </div>
-                <div class="col-xs-4 col-md-2">
-                    <a href="img/produtos/grande/serigrafado_vm651.jpg" rel="shadowbox[vocation]" title="Vidro Serigrafado Vermelho" class="thumbnail">
-                    <img src="img/produtos/miniatura/serigrafado_vm651.jpg" alt="Vidro Serigrafado" id="img-colorida">
+                <div class="col-4 col-md-2 mb-2">
+                    <a href="img/produtos/grande/serigrafado_vm651.jpg" rel="shadowbox[vocation]" title="Vidro Serigrafado Vermelho">
+                        <img src="img/produtos/miniatura/serigrafado_vm651.jpg" alt="Vidro Serigrafado" id="img-colorida" class="img-fluid img-thumbnail">
                     </a>
                 </div>
-                <div class="col-xs-4 col-md-2">
-                    <a href="img/produtos/grande/serigrafado_vr558.jpg" rel="shadowbox[vocation]" title="Vidro Serigrafado Verde" class="thumbnail">
-                    <img src="img/produtos/miniatura/serigrafado_vr558.jpg" alt="Vidro Serigrafado" id="img-colorida">
+                <div class="col-4 col-md-2 mb-2">
+                    <a href="img/produtos/grande/serigrafado_vr558.jpg" rel="shadowbox[vocation]" title="Vidro Serigrafado Verde">
+                        <img src="img/produtos/miniatura/serigrafado_vr558.jpg" alt="Vidro Serigrafado" id="img-colorida" class="img-fluid img-thumbnail">
                     </a>
                 </div>
-                <div class="col-xs-4 col-md-2">
-                    <a href="img/produtos/grande/serigrafado_rx212.jpg" rel="shadowbox[vocation]" title="Vidro Serigrafado Roxo" class="thumbnail">
-                    <img src="img/produtos/miniatura/serigrafado_rx212.jpg" alt="Vidro Serigrafado" id="img-colorida">
+                <div class="col-4 col-md-2 mb-2">
+                    <a href="img/produtos/grande/serigrafado_rx212.jpg" rel="shadowbox[vocation]" title="Vidro Serigrafado Roxo">
+                        <img src="img/produtos/miniatura/serigrafado_rx212.jpg" alt="Vidro Serigrafado" id="img-colorida" class="img-fluid img-thumbnail">
                     </a>
                 </div>
             </div>
@@ -179,39 +179,39 @@ require_once ("includes/links.php");
             <h3>Vidro Serigrafado por Tela</h3>
             
             <div class="row">
-                <div class="col-xs-4 col-md-2">
-                    <a href="img/produtos/grande/serigrafado_tela1.jpg" rel="shadowbox[vocation]" title="Vidro Serigrafado" class="thumbnail">
-                    <img src="img/produtos/miniatura/serigrafado_tela1.jpg" alt="Vidro Serigrafado" id="img-colorida">
+                <div class="col-4 col-md-2 mb-2">
+                    <a href="img/produtos/grande/serigrafado_tela1.jpg" rel="shadowbox[vocation]" title="Vidro Serigrafado">
+                        <img src="img/produtos/miniatura/serigrafado_tela1.jpg" alt="Vidro Serigrafado" id="img-colorida" class="img-fluid img-thumbnail">
                     </a>
                 </div>
-                <div class="col-xs-4 col-md-2">
-                    <a href="img/produtos/grande/serigrafado_tela2.jpg" rel="shadowbox[vocation]" title="Vidro Serigrafado" class="thumbnail">
-                    <img src="img/produtos/miniatura/serigrafado_tela2.jpg" alt="Vidro Serigrafado" id="img-colorida">
+                <div class="col-4 col-md-2 mb-2">
+                    <a href="img/produtos/grande/serigrafado_tela2.jpg" rel="shadowbox[vocation]" title="Vidro Serigrafado">
+                        <img src="img/produtos/miniatura/serigrafado_tela2.jpg" alt="Vidro Serigrafado" id="img-colorida" class="img-fluid img-thumbnail">
                     </a>
                 </div>
-                <div class="col-xs-4 col-md-2">
-                    <a href="img/produtos/grande/serigrafado_tela3.jpg" rel="shadowbox[vocation]" title="Vidro Serigrafado" class="thumbnail">
-                    <img src="img/produtos/miniatura/serigrafado_tela3.jpg" alt="Vidro Serigrafado" id="img-colorida">
+                <div class="col-4 col-md-2 mb-2">
+                    <a href="img/produtos/grande/serigrafado_tela3.jpg" rel="shadowbox[vocation]" title="Vidro Serigrafado">
+                        <img src="img/produtos/miniatura/serigrafado_tela3.jpg" alt="Vidro Serigrafado" id="img-colorida" class="img-fluid img-thumbnail">
                     </a>
                 </div>
-                <div class="col-xs-4 col-md-2">
-                    <a href="img/produtos/grande/serigrafado_tela4.jpg" rel="shadowbox[vocation]" title="Vidro Serigrafado" class="thumbnail">
-                    <img src="img/produtos/miniatura/serigrafado_tela4.jpg" alt="Vidro Serigrafado" id="img-colorida">
+                <div class="col-4 col-md-2 mb-2">
+                    <a href="img/produtos/grande/serigrafado_tela4.jpg" rel="shadowbox[vocation]" title="Vidro Serigrafado">
+                        <img src="img/produtos/miniatura/serigrafado_tela4.jpg" alt="Vidro Serigrafado" id="img-colorida" class="img-fluid img-thumbnail">
                     </a>
                 </div>
-                <div class="col-xs-4 col-md-2">
-                    <a href="img/produtos/grande/serigrafado_tela5.jpg" rel="shadowbox[vocation]" title="Vidro Serigrafado" class="thumbnail">
-                    <img src="img/produtos/miniatura/serigrafado_tela5.jpg" alt="Vidro Serigrafado" id="img-colorida">
+                <div class="col-4 col-md-2 mb-2">
+                    <a href="img/produtos/grande/serigrafado_tela5.jpg" rel="shadowbox[vocation]" title="Vidro Serigrafado">
+                        <img src="img/produtos/miniatura/serigrafado_tela5.jpg" alt="Vidro Serigrafado" id="img-colorida" class="img-fluid img-thumbnail">
                     </a>
                 </div>
-                <div class="col-xs-4 col-md-2">
-                    <a href="img/produtos/grande/serigrafado_tela6.jpg" rel="shadowbox[vocation]" title="Vidro Serigrafado" class="thumbnail">
-                    <img src="img/produtos/miniatura/serigrafado_tela6.jpg" alt="Vidro Serigrafado" id="img-colorida">
+                <div class="col-4 col-md-2 mb-2">
+                    <a href="img/produtos/grande/serigrafado_tela6.jpg" rel="shadowbox[vocation]" title="Vidro Serigrafado">
+                        <img src="img/produtos/miniatura/serigrafado_tela6.jpg" alt="Vidro Serigrafado" id="img-colorida" class="img-fluid img-thumbnail">
                     </a>
                 </div>
-                <div class="col-xs-4 col-md-2">
-                    <a href="img/produtos/grande/serigrafado_tela7.jpg" rel="shadowbox[vocation]" title="Vidro Serigrafado" class="thumbnail">
-                    <img src="img/produtos/miniatura/serigrafado_tela7.jpg" alt="Vidro Serigrafado" id="img-colorida">
+                <div class="col-4 col-md-2 mb-2">
+                    <a href="img/produtos/grande/serigrafado_tela7.jpg" rel="shadowbox[vocation]" title="Vidro Serigrafado">
+                        <img src="img/produtos/miniatura/serigrafado_tela7.jpg" alt="Vidro Serigrafado" id="img-colorida" class="img-fluid img-thumbnail">
                     </a>
                 </div>
             </div>
@@ -223,39 +223,39 @@ require_once ("includes/links.php");
         </div>
     </div>
     
-    <div class="row" id="conteudo">
-    	<div class="col-md-12">
+    <div class="row my-4">
+    	<div class="col-12">
         	<hr>
             
             <div class="row">
-                <div class="col-xs-4 col-md-2">
-                    <a href="img/produtos/grande/serigrafado1.jpg" rel="shadowbox[vocation]" title="Serigrafia" class="thumbnail">
-                    <img src="img/produtos/miniatura/serigrafado1.jpg" alt="Serigrafia">
+                <div class="col-4 col-md-2 mb-2">
+                    <a href="img/produtos/grande/serigrafado1.jpg" rel="shadowbox[vocation]" title="Serigrafia">
+                        <img src="img/produtos/miniatura/serigrafado1.jpg" alt="Serigrafia" class="img-fluid img-thumbnail">
                     </a>
                 </div>
-                <div class="col-xs-4 col-md-2">
-                    <a href="img/produtos/grande/serigrafado2.jpg" rel="shadowbox[vocation]" title="Serigrafia" class="thumbnail">
-                    <img src="img/produtos/miniatura/serigrafado2.jpg" alt="Serigrafia">
+                <div class="col-4 col-md-2 mb-2">
+                    <a href="img/produtos/grande/serigrafado2.jpg" rel="shadowbox[vocation]" title="Serigrafia">
+                        <img src="img/produtos/miniatura/serigrafado2.jpg" alt="Serigrafia" class="img-fluid img-thumbnail">
                     </a>
                 </div>
-                <div class="col-xs-4 col-md-2">
-                    <a href="img/produtos/grande/serigrafado3.jpg" rel="shadowbox[vocation]" title="Serigrafia" class="thumbnail">
-                    <img src="img/produtos/miniatura/serigrafado3.jpg" alt="Serigrafia">
+                <div class="col-4 col-md-2 mb-2">
+                    <a href="img/produtos/grande/serigrafado3.jpg" rel="shadowbox[vocation]" title="Serigrafia">
+                        <img src="img/produtos/miniatura/serigrafado3.jpg" alt="Serigrafia" class="img-fluid img-thumbnail">
                     </a>
                 </div>
-                <div class="col-xs-4 col-md-2">
-                    <a href="img/produtos/grande/serigrafado4.jpg" rel="shadowbox[vocation]" title="Serigrafia" class="thumbnail">
-                    <img src="img/produtos/miniatura/serigrafado4.jpg" alt="Serigrafia">
+                <div class="col-4 col-md-2 mb-2">
+                    <a href="img/produtos/grande/serigrafado4.jpg" rel="shadowbox[vocation]" title="Serigrafia">
+                        <img src="img/produtos/miniatura/serigrafado4.jpg" alt="Serigrafia" class="img-fluid img-thumbnail">
                     </a>
                 </div>
-                <div class="col-xs-4 col-md-2">
-                    <a href="img/produtos/grande/serigrafado5.jpg" rel="shadowbox[vocation]" title="Serigrafia" class="thumbnail">
-                    <img src="img/produtos/miniatura/serigrafado5.jpg" alt="Serigrafia">
+                <div class="col-4 col-md-2 mb-2">
+                    <a href="img/produtos/grande/serigrafado5.jpg" rel="shadowbox[vocation]" title="Serigrafia">
+                        <img src="img/produtos/miniatura/serigrafado5.jpg" alt="Serigrafia" class="img-fluid img-thumbnail">
                     </a>
                 </div>
-                <div class="col-xs-4 col-md-2">
-                    <a href="img/produtos/grande/serigrafado6.jpg" rel="shadowbox[vocation]" title="Serigrafia" class="thumbnail">
-                    <img src="img/produtos/miniatura/serigrafado6.jpg" alt="Serigrafia">
+                <div class="col-4 col-md-2 mb-2">
+                    <a href="img/produtos/grande/serigrafado6.jpg" rel="shadowbox[vocation]" title="Serigrafia">
+                        <img src="img/produtos/miniatura/serigrafado6.jpg" alt="Serigrafia" class="img-fluid img-thumbnail">
                     </a>
                 </div>
             </div>

@@ -5,7 +5,7 @@
 require_once ("funcoes/conexao.php");
 
 /* Tag Google */
-$con_tag = mysqli_query ($conexao, "SELECT cantos AS tag FROM admin_tags WHERE id='1'") or die (mysqli_error());
+$con_tag = mysqli_query ($conexao, "SELECT cantos AS tag FROM admin_tags WHERE id='1'") or die (mysqli_error($conexao));
 	$d_tag = mysqli_fetch_array ($con_tag);
 		$tag = $d_tag['tag'];
 		
@@ -18,7 +18,7 @@ $title = "Cantos de Vidros - Linde Vidros";
 $description = "Você pode escolher o canto do seu vidro de acordo com o seu projeto, canto M, canto N, canto reto, canto tick, canto lápis, canto moeda, canto garrafa, canto garrafão, canto chanfrado" . $tg;
 $keywords = "cantos vidros, canto m, canto n, canto reto, canto tick, canto lápis, canto moeda, canto garrafa, canto garrafão, canto chanfrado";
 
-$og_url = "http://www.lindevidros.com.br/cantos";
+$og_url = "https://www.lindevidros.com.br/cantos";
 $og_name = "Cantos de Vidros";
 
 $submenu_id = "S-CA";
@@ -39,26 +39,26 @@ require_once ("includes/links.php");
 <?php //include_once ("includes/logo.php"); ?>
 
 <div class="container-fluid">
-	<div class="row" id="titulo">
-    	<div class="col-md-12">
-        	<div class="container">
-            	<div class="row">
-                    <div class="col-md-12">
-                    	<h1>Cantos</h1>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="row">
+        <div class="col-12 bg-light py-4 border-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="text-azul-linde">Cantos</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <div class="container">
-    <div class="row" id="img-pg">
-    	<div class="col-md-12">
-        	<img src="img/img_cantos.jpg" alt="Cantos" class="img-rounded img-responsive">
+    <div class="row mt-3">
+    	<div class="col-12">
+        	<img src="img/img_cantos.jpg" alt="Cantos" class="rounded img-fluid">
         </div>
     </div>
-    <div class="row" id="conteudo">
+    <div class="row my-4">
         <div class="col-md-9">
             <p class="text-justify">Para atender a necessidade de cada projeto, fornecemos os vidros com uma variedade de opções para os <strong>cantos</strong>, trazendo um acabamento superior.</p>
             
@@ -67,75 +67,93 @@ require_once ("includes/links.php");
             <h2>Tipos de Cantos</h2>
             
             <div class="row">
-                <div class="col-xs-6 col-sm-3">
-                    <div class="thumbnail" id="img-thumb">
-                        <a href="img/produtos/grande/canto_m.jpg" rel="shadowbox[vocation]" title="Canto M"><img src="img/produtos/miniatura/canto_m.jpg" alt="Canto M"></a>
-                        <div class="caption">
-                            <p>Canto M</p>
+                <div class="col-6 col-md-2">
+                    <div class="card mb-3 border-0">
+                        <a href="img/produtos/grande/canto_m.jpg" rel="shadowbox[vocation]" title="Canto M">
+                            <img src="img/produtos/miniatura/canto_m.jpg" class="card-img-top" alt="Canto M">
+                        </a>
+                        <div class="card-body">
+                            <p class="h6 mb-3 text-center">Canto M</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-6 col-sm-3">
-                    <div class="thumbnail" id="img-thumb">
-                        <a href="img/produtos/grande/canto_n.jpg" rel="shadowbox[vocation]" title="Canto N"><img src="img/produtos/miniatura/canto_n.jpg" alt="Canto N"></a>
-                        <div class="caption">
-                            <p>Canto N</p>
+                <div class="col-6 col-md-2">
+                    <div class="card mb-3 border-0">
+                        <a href="img/produtos/grande/canto_n.jpg" rel="shadowbox[vocation]" title="Canto N">
+                            <img src="img/produtos/miniatura/canto_n.jpg" class="card-img-top" alt="Canto N">
+                        </a>
+                        <div class="card-body">
+                            <p class="h6 mb-3 text-center">Canto N</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-6 col-sm-3">
-                    <div class="thumbnail" id="img-thumb">
-                        <a href="img/produtos/grande/canto_reto.jpg" rel="shadowbox[vocation]" title="Canto Reto"><img src="img/produtos/miniatura/canto_reto.jpg" alt="Canto Reto"></a>
-                        <div class="caption">
-                            <p>Canto Reto</p>
+                <div class="col-6 col-md-2">
+                    <div class="card mb-3 border-0">
+                        <a href="img/produtos/grande/canto_reto.jpg" rel="shadowbox[vocation]" title="Canto Reto">
+                            <img src="img/produtos/miniatura/canto_reto.jpg" class="card-img-top" alt="Canto Reto">
+                        </a>
+                        <div class="card-body">
+                            <p class="h6 mb-3 text-center">Canto Reto</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-6 col-sm-3">
-                    <div class="thumbnail" id="img-thumb">
-                        <a href="img/produtos/grande/canto_tick.jpg" rel="shadowbox[vocation]" title="Canto Tick"><img src="img/produtos/miniatura/canto_tick.jpg" alt="Canto Tick"></a>
-                        <div class="caption">
-                            <p>Canto Tick</p>
+                <div class="col-6 col-md-2">
+                    <div class="card mb-3 border-0">
+                        <a href="img/produtos/grande/canto_tick.jpg" rel="shadowbox[vocation]" title="Canto Tick">
+                            <img src="img/produtos/miniatura/canto_tick.jpg" class="card-img-top" alt="Canto Tick">
+                        </a>
+                        <div class="card-body">
+                            <p class="h6 mb-3 text-center">Canto Tick</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-6 col-sm-3">
-                    <div class="thumbnail" id="img-thumb">
-                        <a href="img/produtos/grande/canto_lapis.jpg" rel="shadowbox[vocation]" title="Canto Lápis"><img src="img/produtos/miniatura/canto_lapis.jpg" alt="Canto Lápis"></a>
-                        <div class="caption">
-                            <p>Canto Lápis</p>
+                <div class="col-6 col-md-2">
+                    <div class="card mb-3 border-0">
+                        <a href="img/produtos/grande/canto_lapis.jpg" rel="shadowbox[vocation]" title="Canto Lápis">
+                            <img src="img/produtos/miniatura/canto_lapis.jpg" class="card-img-top" alt="Canto Lápis">
+                        </a>
+                        <div class="card-body">
+                            <p class="h6 mb-3 text-center">Canto Lápis</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-6 col-sm-3">
-                    <div class="thumbnail" id="img-thumb">
-                        <a href="img/produtos/grande/canto_moeda.jpg" rel="shadowbox[vocation]" title="Canto Moeda"><img src="img/produtos/miniatura/canto_moeda.jpg" alt="Canto Moeda"></a>
-                        <div class="caption">
-                            <p>Canto Moeda</p>
+                <div class="col-6 col-md-2">
+                    <div class="card mb-3 border-0">
+                        <a href="img/produtos/grande/canto_moeda.jpg" rel="shadowbox[vocation]" title="Canto Moeda">
+                            <img src="img/produtos/miniatura/canto_moeda.jpg" class="card-img-top" alt="Canto Moeda">
+                        </a>
+                        <div class="card-body">
+                            <p class="h6 mb-3 text-center">Canto Moeda</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-6 col-sm-3">
-                    <div class="thumbnail" id="img-thumb">
-                        <a href="img/produtos/grande/canto_garrafa.jpg" rel="shadowbox[vocation]" title="Canto Garrafa"><img src="img/produtos/miniatura/canto_garrafa.jpg" alt="Canto Garrafa"></a>
-                        <div class="caption">
-                            <p>Canto Garrafa</p>
+                <div class="col-6 col-md-2">
+                    <div class="card mb-3 border-0">
+                        <a href="img/produtos/grande/canto_garrafa.jpg" rel="shadowbox[vocation]" title="Canto Garrafa">
+                            <img src="img/produtos/miniatura/canto_garrafa.jpg" class="card-img-top" alt="Canto Garrafa">
+                        </a>
+                        <div class="card-body">
+                            <p class="h6 mb-3 text-center">Canto Garrafa</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-6 col-sm-3">
-                    <div class="thumbnail" id="img-thumb">
-                        <a href="img/produtos/grande/canto_garrafao.jpg" rel="shadowbox[vocation]" title="Canto Garrafão"><img src="img/produtos/miniatura/canto_garrafao.jpg" alt="Canto Garrafão"></a>
-                        <div class="caption">
-                            <p>Canto Garrafão</p>
+                <div class="col-6 col-md-2">
+                    <div class="card mb-3 border-0">
+                        <a href="img/produtos/grande/canto_garrafao.jpg" rel="shadowbox[vocation]" title="Canto Garrafão">
+                            <img src="img/produtos/miniatura/canto_garrafao.jpg" class="card-img-top" alt="Canto Garrafão">
+                        </a>
+                        <div class="card-body">
+                            <p class="h6 mb-3 text-center">Canto Garrafão</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-6 col-sm-3">
-                    <div class="thumbnail" id="img-thumb">
-                        <a href="img/produtos/grande/canto_chanfrado.jpg" rel="shadowbox[vocation]" title="Canto Chanfrado"><img src="img/produtos/miniatura/canto_chanfrado.jpg" alt="Canto Chanfrado"></a>
-                        <div class="caption">
-                            <p>Canto Chanfrado</p>
+                <div class="col-6 col-md-2">
+                    <div class="card mb-3 border-0">
+                        <a href="img/produtos/grande/canto_chanfrado.jpg" rel="shadowbox[vocation]" title="Canto Chanfrado">
+                            <img src="img/produtos/miniatura/canto_chanfrado.jpg" class="card-img-top" alt="Canto Chanfrado">
+                        </a>
+                        <div class="card-body">
+                            <p class="h6 mb-3 text-center">Canto Chanfrado</p>
                         </div>
                     </div>
                 </div>

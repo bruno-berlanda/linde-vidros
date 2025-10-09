@@ -5,7 +5,7 @@
 require_once ("funcoes/conexao.php");
 
 /* Tag Google */
-$con_tag = mysqli_query ($conexao, "SELECT espelho AS tag FROM admin_tags WHERE id='1'") or die (mysqli_error());
+$con_tag = mysqli_query ($conexao, "SELECT espelho AS tag FROM admin_tags WHERE id='1'") or die (mysqli_error($conexao));
 	$d_tag = mysqli_fetch_array ($con_tag);
 		$tag = $d_tag['tag'];
 		
@@ -18,7 +18,7 @@ $title = "Espelhos - Linde Vidros";
 $description = "Os espelhos de alta qualidade trazem ao seu ambiente um toque de modernidade e sofisticação" . $tg;
 $keywords = "espelho, espelho bronze, espelho prata";
 
-$og_url = "http://www.lindevidros.com.br/espelho";
+$og_url = "https://www.lindevidros.com.br/espelho";
 $og_name = "Espelhos";
 
 $submenu_id = "M-ES";
@@ -39,26 +39,26 @@ require_once ("includes/links.php");
 <?php //include_once ("includes/logo.php"); ?>
 
 <div class="container-fluid">
-	<div class="row" id="titulo">
-    	<div class="col-md-12">
-        	<div class="container">
-            	<div class="row">
-                    <div class="col-md-12">
-                    	<h1>Espelho</h1>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="row">
+        <div class="col-12 bg-light py-4 border-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="text-azul-linde">Espelho</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <div class="container">
-    <div class="row" id="img-pg">
-    	<div class="col-md-12">
-        	<img src="img/img_espelho.jpg" alt="Espelho" class="img-rounded img-responsive">
+    <div class="row mt-3">
+    	<div class="col-12">
+        	<img src="img/img_espelho.jpg" alt="Espelho" class="rounded img-fluid">
         </div>
     </div>
-    <div class="row" id="conteudo">
+    <div class="row my-4">
         <div class="col-md-9">
 			<p class="text-justify">O <strong>espelho</strong> Linde Vidros recebe o acabamento conforme você desejar, como lapidação, bisotê, furação e aplicação da <a href="<?php echo $l_pelicula; ?>" title="Película de Segurança">película de segurança</a> (trazendo segurança e evitando ruptura em possíveis quebras).</p>
             
@@ -92,24 +92,24 @@ require_once ("includes/links.php");
         </div>
     </div>
     
-    <div class="row" id="conteudo">
-    	<div class="col-md-12">
+    <div class="row my-4">
+    	<div class="col-12">
         	<hr>
             
             <div class="row">
-                <div class="col-xs-4 col-md-2">
-                    <a href="img/produtos/grande/espelho1.jpg" rel="shadowbox[vocation]" title="Espelho" class="thumbnail">
-                    <img src="img/produtos/miniatura/espelho1.jpg" alt="Espelho">
+                <div class="col-4 col-md-2 mb-2">
+                    <a href="img/produtos/grande/espelho1.jpg" rel="shadowbox[vocation]" title="Espelho">
+                        <img src="img/produtos/miniatura/espelho1.jpg" alt="Espelho" class="img-fluid img-thumbnail">
                     </a>
                 </div>
-                <div class="col-xs-4 col-md-2">
-                    <a href="img/produtos/grande/espelho2.jpg" rel="shadowbox[vocation]" title="Espelho" class="thumbnail">
-                    <img src="img/produtos/miniatura/espelho2.jpg" alt="Espelho">
+                <div class="col-4 col-md-2 mb-2">
+                    <a href="img/produtos/grande/espelho2.jpg" rel="shadowbox[vocation]" title="Espelho">
+                        <img src="img/produtos/miniatura/espelho2.jpg" alt="Espelho" class="img-fluid img-thumbnail">
                     </a>
                 </div>
-                <div class="col-xs-4 col-md-2">
-                    <a href="img/produtos/grande/espelho3.jpg" rel="shadowbox[vocation]" title="Espelho" class="thumbnail">
-                    <img src="img/produtos/miniatura/espelho3.jpg" alt="Espelho">
+                <div class="col-4 col-md-2 mb-2">
+                    <a href="img/produtos/grande/espelho3.jpg" rel="shadowbox[vocation]" title="Espelho">
+                        <img src="img/produtos/miniatura/espelho3.jpg" alt="Espelho" class="img-fluid img-thumbnail">
                     </a>
                 </div>
             </div>
