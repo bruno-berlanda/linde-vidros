@@ -111,59 +111,6 @@ require_once ("includes/links.php");
             
             <h2>Tipos de Vidro Insulado</h2>
             
-            <br>
-            
-            <div class="row">
-            	<div class="col-md-4">
-                	<img src="img/produtos/insulado_duraseal.jpg" alt="Vidro Insulado" class="img-fluid rounded">
-                    <small>Duraseal</small>
-                </div>
-                <div class="col-md-4">
-                	<img src="img/produtos/insulado_triseal.jpg" alt="Vidro Insulado" class="img-fluid rounded">
-                    <small>Triseal</small>
-                </div>
-                <div class="col-md-4">
-                	<img src="img/produtos/insulado_aluminio.jpg" alt="Vidro Insulado" class="img-fluid rounded">
-                    <small>Perfil de Alumínio</small>
-                </div>
-            </div>
-            
-            <br>
-            
-            <h3>Duraseal</h3>
-            
-            <p class="text-justify">Em um dia quente de verão, a superfície interna do vidro de uma janela ineficiente transmitirá a temperatura do exterior, fazendo com que seus gastos com ar condicionado sejam maiores. Janelas feitas com Duraseal reduzem a transferência de calor e melhoram a qualidade do insulamento do vidro de sua janela.</p>
-            
-            <p class="text-justify">A utilização do <em>Duraseal</em> como espaçador flexível orgânico garante o melhor desempenho térmico e acústico de sua janela, trata-se de um sistema espaçador versátil e de alta durabilidade, construído com a tecnologia de laminação composta na qual já possui em sua massa, o espaçador, o adesivo e o dessecante. O desenho único do Duraseal incorpora um reforço de polímero que garante superfícies e quinas lisas e limpas para o melhor acabamento. Por possuir todos os componentes necessários à aplicação e vedação embutidos em um único produto, a utilização do espaçador Duraseal favorece a eficiência do processo produtivo dos vidros duplos, além de aumentar a vida útil do produto.</p>
-            
-            <dl class="row">
-                <dt class="col-12 col-md-3">Espaçador embutido</dt>
-                <dd class="col-12 col-md-9">Espaçador único, composto por itens flexíveis e ao mesmo tempo incompressíveis e estáveis.</dd>
-                
-                <dt class="col-12 col-md-3">Adesivos de juntas</dt>
-                <dd class="col-12 col-md-9">Adesivo de alto rendimento que oferece resistência excepcional à transmissão de gases e vapores de umidade.</dd>
-                
-                <dt class="col-12 col-md-3">Recobrimento dessecante</dt>
-                <dd class="col-12 col-md-9">O dessecante concentrado na camada superior absorve a umidade de dentro da câmara.</dd>
-                
-                <dt class="col-12 col-md-3">Aplicação básica</dt>
-                <dd class="col-12 col-md-9">Para aplicações na produção de sistemas de Vidro Duplo Ekoglass com processos controlados e fabricados com selagem quente e por compressão. Desenhado com sistemas de selagem simples, Duraseal também pode ser utilizado com sistemas de selagem duplos.</dd>
-            </dl>
-            
-            <br>
-            
-            <div class="alert alert-info text-center" role="alert">
-                <i class="fa-regular fa-thumbs-up fa-4x"></i>
-                <br><br>
-                A Linde Vidros é certificada no processo de fabricação do <strong>Duraseal</strong> pela <em>Quanex</em>.
-            </div>
-            
-            <br>
-            
-            <h3>Triseal</h3>
-            
-            <p class="text-justify">Trata-se de um projeto de vedação tripla, adequado para envidraçamento estrutural comercial, que consiste em um espaçador em silicone termorrígido que incorpora o dessecante 3A integral, adesivo pré-aplicado para adesão do vidro, vedação primária de polisobutileno e vedação estrutural. O Triseal é um espaçador de silicone flexível desenvolvido para satisfazer as mais exigentes demandas de vidros comerciais, incluindo envidraçamento estrutural.</p>
-            
             <h3>Perfil de Alumínio</h3>
             
             <p class="text-justify">Formado por dois vidros separados entre si por uma câmara de ar desidratado, a separação entre os vidros é definida por um <em>Perfil de Alumínio</em>, cujo interior se aloja o produto dissecante (Sílica) e a estanqueidade está assegurada por um duplo selante perimetral a base de selantes orgânicos. Esse tipo de vidro constitui um excelente isolante térmico e acústico e pode incorporar no interior diferentes espessuras de câmara conforme especificação do cliente.</p>
@@ -174,7 +121,7 @@ require_once ("includes/links.php");
             
             <h2>Overlap</h2>
             
-            <p class="text-justify"><img src="img/produtos/overlap.png" alt="Linde Vidros" class="img-responsive" id="img-esquerda"> <strong>Overlap</strong> é um vidro duplo utilizado para fachadas onde uma das peças excede o tamanho da outra, ficando sobreposto nas esquadrias, dando um visual de envidraçamento sobre toda a fachada.</p>
+            <p class="text-justify"><img src="img/produtos/overlap.png" alt="Linde Vidros" class="img-fluid float-start me-4 mb-4"> <strong>Overlap</strong> é um vidro duplo utilizado para fachadas onde uma das peças excede o tamanho da outra, ficando sobreposto nas esquadrias, dando um visual de envidraçamento sobre toda a fachada.</p>
         </div>
         <div class="col-md-3">
 			<?php include_once ("includes/menu_engenharia_produtos.php"); ?>
@@ -186,11 +133,6 @@ require_once ("includes/links.php");
         	<hr>
             
             <div class="row">
-                <div class="col-4 col-md-2 mb-2">
-                    <a href="img/produtos/grande/insulado1.jpg" rel="shadowbox[vocation]" title="Vidro Insulado">
-                        <img src="img/produtos/miniatura/insulado1.jpg" alt="Vidro Insulado" class="img-fluid img-thumbnail">
-                    </a>
-                </div>
                 <div class="col-4 col-md-2 mb-2">
                     <a href="img/produtos/grande/insulado2.jpg" rel="shadowbox[vocation]" title="Vidro Insulado">
                         <img src="img/produtos/miniatura/insulado2.jpg" alt="Vidro Insulado" class="img-fluid img-thumbnail">
