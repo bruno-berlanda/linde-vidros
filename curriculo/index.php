@@ -49,33 +49,6 @@ include_once ("includes/cabecalho.php");
         <?php
 		}
 		?>
-        
-        <br>
-        
-        <p>Seu currículo está <?php echo $porc_total; ?>% completo.</p>
-        <?php
-		if ($porc_total < 50) {
-		?>
-        <div class="progress progress-striped">
-        	<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo $porc_total; ?>%;"></div>
-        </div>
-        <?php
-		}
-		else if ($porc_total >= 50 && $porc_total < 90) {
-		?>
-        <div class="progress progress-striped">
-        	<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo $porc_total; ?>%;"></div>
-        </div>
-        <?php	
-		}
-		else {
-		?>
-        <div class="progress progress-striped">
-        	<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo $porc_total; ?>%;"></div>
-        </div>
-        <?php	
-		}
-		?>
     </div>
     <div class="col-md-10">
     	<div class="well">

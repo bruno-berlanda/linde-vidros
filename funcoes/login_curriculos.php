@@ -8,26 +8,30 @@ $senha = md5(trim($_POST['senha']));
 
 if ($login == '' || $senha == '') {
 	header('Location: ../curriculo-entrar.php?msgErro=Você precisa digitar seu CPF e senha');
+    exit();
 }
 
-$sql = mysqli_query ($conexao, "SELECT nome, senha FROM usuarios WHERE cpf='$login' AND senha='$senha'");
+$sql = mysqli_query ($conexao, "SELECT nome, senha FROM usuarios WHERE cpf='$login' AND senha='$senha'") or die (mysqli_error($conexao));
 $cont = mysqli_num_rows($sql);
-	$linha = mysqli_fetch_array($sql);
-		$nome_db 	= $linha['nome'];
-		$senha_db 	= $linha['senha'];
 
 // Verifica se o login confere com o banco de dados
 if ($cont == 0) {
 
 	header('Location: ../curriculo-entrar.php?msgErro=CPF incorreto ou senha inválida');
+    exit();
 
 // Verifica se a senha confere com o banco de dados	
 } 
 else {
 
+    $linha = mysqli_fetch_assoc($sql);
+        $nome_db 	= $linha['nome'];
+        $senha_db 	= $linha['senha'];
+
 	if ($senha_db != $senha) { //confere senha
 	
 		header('Location: ../curriculo-entrar.php?msgErro=Senha incorreta');
+        exit();
 	
 	} 
 	else {
