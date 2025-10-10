@@ -80,31 +80,6 @@ require_once ("includes/links.php");
             
             <br>
             
-            <div class="bg-light rounded p-4">
-                <div class="row">
-                    <div class="col-xs-12 col-md-6">
-                        <p class="text-center"><img src="img/produtos/marmorizado.png" alt="Vidro Marmorizado" class="rounded img-fluid"></p>
-                    </div>
-                    <div class="col-xs-12 col-md-6">
-                        <p class="lead">LANÇAMENTO!</p>
-                        <h2>Vidro Marmorizado</h2>
-                        
-                        <p class="text-justify">O <strong>vidro marmorizado</strong> veio para ampliar suas opções na decoração de casas e ambientes internos ou externos, além do seu requinte e bom gosto, o vidro marmorizado vem facilitar a limpeza e higiene no dia a dia em suas diversas aplicações.</p>
-                        
-                        <p class="text-justify">A composição de cores para este produto deixamos por conta da criatividade de cada cliente, podendo fazer as mais variadas composições de cores, agradando a todos os gostos, sendo sempre possível a combinação entre duas cores, a cor dos fios e a cor do fundo.</p>
-                        
-                        <p><strong>Cores padrões:</strong></p>
-                        <ul>
-                            <li>Preto com fios brancos</li>
-                            <li>Branco com fios pretos</li>
-                        </ul>
-                        <p class="text-danger"><em>Outras cores, favor consultar o departamento comercial.</em></p>
-                    </div>
-                </div>
-            </div>
-            
-            <br>
-            
             <h2>Tipos de Serigrafia</h2>
             
             <h3>Vidro Serigrafado por Máquina</h3>
