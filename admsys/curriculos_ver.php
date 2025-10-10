@@ -287,14 +287,8 @@ else {
 
 <?php
 // Cálculo % preenchimento do currículo
-include_once ("includes/calculo_porc_usuario.php");
+//include_once ("includes/calculo_porc_usuario.php");
 ?>
-
-<div class="progress">
-    <div class="progress-bar progress-bar-primary progress-bar-striped" role="progressbar" aria-valuenow="<?php echo $porc_total; ?>" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo $porc_total; ?>%">
-    	<span><?php echo $porc_total; ?>%</span>
-    </div>
-</div>
 
 <!-- --------------------------------------------------------------------------------------
 BOTÕES EXCLUIR/REATIVAR CURRÍCULO
@@ -839,11 +833,14 @@ OUTRAS INFORMAÇÕES - FINAL
 /* ***************************************************************************************************************************************************
 OBSERVAÇÕES DO SETOR DE RH
 *************************************************************************************************************************************************** */
-$consultaObs = mysqli_query ($conexao, "SELECT * FROM usuarios_obs WHERE id_usuario='$idUsuario'") or die (mysqli_error());
+$consultaObs = mysqli_query ($conexao, "SELECT * FROM usuarios_obs WHERE id_usuario='$idUsuario'") or die (mysqli_error($conexao));
+
+if (mysqli_num_rows($consultaObs) > 0) {
+
 	$infos = mysqli_fetch_array ($consultaObs);
-		
+
 		$obs 			= $infos['obs'];
-		
+
 		$administrativo = $infos['administrativo'];
 		$almoxarifado 	= $infos['almoxarifado'];
 		$compras 		= $infos['compras'];
@@ -864,176 +861,180 @@ $consultaObs = mysqli_query ($conexao, "SELECT * FROM usuarios_obs WHERE id_usua
 		$faturamento 	= $infos['faturamento'];
 		$seguranca 		= $infos['seguranca'];
 		$rh 			= $infos['rh'];
-?>
+    ?>
 
-<form method="post" action="funcoes/curriculos.php?funcao=obs&idUsuarioCur=<?php echo $idUsuario;?>" class="form-horizontal">
-    <fieldset>
-    
-    <legend>Observações para <?php echo primeiro_nome($nomeUsuario); ?></legend>
-    
-    <div class="form-group form-group-sm">
-        <label for="textObs" class="col-sm-3 control-label">Observações</label>
-        <div class="col-sm-9">
-            <textarea name="obs" rows="10" class="form-control" id="textObs"><?php echo $obs;?></textarea>
-        </div>
-    </div>
-    <div class="form-group form-group-sm">
-        <label for="checkboxPerfil" class="col-sm-3 control-label">Perfil</label>
-        <div class="col-sm-9">
-            <div class="checkbox">
-                <label>
-                    <input type="checkbox" name="administrativo" value="1"<?php if ($administrativo == "1") { echo " checked"; } ?>> Administrativo
-                </label>
-            </div>
-            <div class="checkbox">
-                <label>
-                    <input type="checkbox" name="almoxarifado" value="1"<?php if ($almoxarifado == "1") { echo " checked"; } ?>> Almoxarifado
-                </label>
-            </div>
-            <div class="checkbox">
-                <label>
-                    <input type="checkbox" name="compras" value="1"<?php if ($compras == "1") { echo " checked"; } ?>> Compras
-                </label>
-            </div>
-            <div class="checkbox">
-                <label>
-                    <input type="checkbox" name="contabilidade" value="1"<?php if ($contabilidade == "1") { echo " checked"; } ?>> Contabilidade
-                </label>
-            </div>
-            <div class="checkbox">
-                <label>
-                    <input type="checkbox" name="construcao" value="1"<?php if ($construcao == "1") { echo " checked"; } ?>> Construção
-                </label>
-            </div>
-            <div class="checkbox">
-                <label>
-                    <input type="checkbox" name="faturamento" value="1"<?php if ($faturamento == "1") { echo " checked"; } ?>> Faturamento
-                </label>
-            </div>
-            <div class="checkbox">
-                <label>
-                    <input type="checkbox" name="financeiro" value="1"<?php if ($financeiro == "1") { echo " checked"; } ?>> Financeiro
-                </label>
-            </div>
-            <div class="checkbox">
-                <label>
-                    <input type="checkbox" name="limpeza" value="1"<?php if ($limpeza == "1") { echo " checked"; } ?>> Limpeza
-                </label>
-            </div>
-            <div class="checkbox">
-                <label>
-                    <input type="checkbox" name="manutencao" value="1"<?php if ($manutencao == "1") { echo " checked"; } ?>> Manutenção
-                </label>
-            </div>
-            <div class="checkbox">
-                <label>
-                    <input type="checkbox" name="pcp" value="1"<?php if ($pcp == "1") { echo " checked"; } ?>> PCP
-                </label>
-            </div>
-            <div class="checkbox">
-                <label>
-                    <input type="checkbox" name="portaria" value="1"<?php if ($portaria == "1") { echo " checked"; } ?>> Portaria
-                </label>
-            </div>
-            <div class="checkbox">
-                <label>
-                    <input type="checkbox" name="producao" value="1"<?php if ($producao == "1") { echo " checked"; } ?>> Produção
-                </label>
-            </div>
-            <div class="checkbox">
-                <label>
-                    <input type="checkbox" name="projeto" value="1"<?php if ($projeto == "1") { echo " checked"; } ?>> Projeto
-                </label>
-            </div>
-            <div class="checkbox">
-                <label>
-                    <input type="checkbox" name="qualidade" value="1"<?php if ($qualidade == "1") { echo " checked"; } ?>> Qualidade
-                </label>
-            </div>
-            <div class="checkbox">
-                <label>
-                    <input type="checkbox" name="recepcao" value="1"<?php if ($recepcao == "1") { echo " checked"; } ?>> Recepção
-                </label>
-            </div>
-            <div class="checkbox">
-                <label>
-                    <input type="checkbox" name="rh" value="1"<?php if ($rh == "1") { echo " checked"; } ?>> RH
-                </label>
-            </div>
-            <div class="checkbox">
-                <label>
-                    <input type="checkbox" name="seguranca" value="1"<?php if ($seguranca == "1") { echo " checked"; } ?>> Segurança do Trabalho
-                </label>
-            </div>
-            <div class="checkbox">
-                <label>
-                    <input type="checkbox" name="ti" value="1"<?php if ($ti == "1") { echo " checked"; } ?>> TI
-                </label>
-            </div>
-            <div class="checkbox">
-                <label>
-                    <input type="checkbox" name="transporte" value="1"<?php if ($transporte == "1") { echo " checked"; } ?>> Transporte
-                </label>
-            </div>
-            <div class="checkbox">
-                <label>
-                    <input type="checkbox" name="vendas" value="1"<?php if ($vendas == "1") { echo " checked"; } ?>> Vendas
-                </label>
+    <form method="post" action="funcoes/curriculos.php?funcao=obs&idUsuarioCur=<?php echo $idUsuario;?>" class="form-horizontal">
+        <fieldset>
+
+        <legend>Observações para <?php echo primeiro_nome($nomeUsuario); ?></legend>
+
+        <div class="form-group form-group-sm">
+            <label for="textObs" class="col-sm-3 control-label">Observações</label>
+            <div class="col-sm-9">
+                <textarea name="obs" rows="10" class="form-control" id="textObs"><?php echo $obs;?></textarea>
             </div>
         </div>
-    </div>
-    
-    <hr>
-    
-    <div class="form-group form-group-sm">
-        <div class="col-sm-offset-3 col-sm-9">
-            <span class="text-muted">É funcionário da Linde Vidros?</span>
-        </div>
-    </div>    
-    <div class="form-group form-group-sm">
-        <label for="radioFuncionario" class="col-sm-3 control-label">Funcionário</label>
-        <div class="col-sm-9">
-            <div class="radio">
-                <label>
-                    <input type="radio" name="funcionario" value="N"<?php if ($funcionarioUsuario == "N") { echo " checked"; } ?>> Não
-                </label>
+        <div class="form-group form-group-sm">
+            <label for="checkboxPerfil" class="col-sm-3 control-label">Perfil</label>
+            <div class="col-sm-9">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="administrativo" value="1"<?php if ($administrativo == "1") { echo " checked"; } ?>> Administrativo
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="almoxarifado" value="1"<?php if ($almoxarifado == "1") { echo " checked"; } ?>> Almoxarifado
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="compras" value="1"<?php if ($compras == "1") { echo " checked"; } ?>> Compras
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="contabilidade" value="1"<?php if ($contabilidade == "1") { echo " checked"; } ?>> Contabilidade
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="construcao" value="1"<?php if ($construcao == "1") { echo " checked"; } ?>> Construção
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="faturamento" value="1"<?php if ($faturamento == "1") { echo " checked"; } ?>> Faturamento
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="financeiro" value="1"<?php if ($financeiro == "1") { echo " checked"; } ?>> Financeiro
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="limpeza" value="1"<?php if ($limpeza == "1") { echo " checked"; } ?>> Limpeza
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="manutencao" value="1"<?php if ($manutencao == "1") { echo " checked"; } ?>> Manutenção
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="pcp" value="1"<?php if ($pcp == "1") { echo " checked"; } ?>> PCP
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="portaria" value="1"<?php if ($portaria == "1") { echo " checked"; } ?>> Portaria
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="producao" value="1"<?php if ($producao == "1") { echo " checked"; } ?>> Produção
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="projeto" value="1"<?php if ($projeto == "1") { echo " checked"; } ?>> Projeto
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="qualidade" value="1"<?php if ($qualidade == "1") { echo " checked"; } ?>> Qualidade
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="recepcao" value="1"<?php if ($recepcao == "1") { echo " checked"; } ?>> Recepção
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="rh" value="1"<?php if ($rh == "1") { echo " checked"; } ?>> RH
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="seguranca" value="1"<?php if ($seguranca == "1") { echo " checked"; } ?>> Segurança do Trabalho
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="ti" value="1"<?php if ($ti == "1") { echo " checked"; } ?>> TI
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="transporte" value="1"<?php if ($transporte == "1") { echo " checked"; } ?>> Transporte
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="vendas" value="1"<?php if ($vendas == "1") { echo " checked"; } ?>> Vendas
+                    </label>
+                </div>
             </div>
-            <div class="radio">
-                <label>
-                    <input type="radio" name="funcionario" value="S"<?php if ($funcionarioUsuario == "S") { echo " checked"; } ?>> Sim
-                </label>
+        </div>
+
+        <hr>
+
+        <div class="form-group form-group-sm">
+            <div class="col-sm-offset-3 col-sm-9">
+                <span class="text-muted">É funcionário da Linde Vidros?</span>
             </div>
         </div>
-    </div>
-    
-    <div class="form-group form-group-sm">
-        <div class="col-sm-offset-3 col-sm-9">
-            <span class="text-muted">Já trabalhou na Linde Vidros?</span>
-        </div>
-    </div>
-    <div class="form-group form-group-sm">
-        <label for="radioexFuncionario" class="col-sm-3 control-label">Ex-Funcionário</label>
-        <div class="col-sm-9">
-            <div class="radio">
-                <label>
-                    <input type="radio" name="exfuncionario" value="N"<?php if ($exfuncionarioUsuario == "N") { echo " checked"; } ?>> Não
-                </label>
-            </div>
-            <div class="radio">
-                <label>
-                    <input type="radio" name="exfuncionario" value="S"<?php if ($exfuncionarioUsuario == "S") { echo " checked"; } ?>> Sim
-                </label>
+        <div class="form-group form-group-sm">
+            <label for="radioFuncionario" class="col-sm-3 control-label">Funcionário</label>
+            <div class="col-sm-9">
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="funcionario" value="N"<?php if ($funcionarioUsuario == "N") { echo " checked"; } ?>> Não
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="funcionario" value="S"<?php if ($funcionarioUsuario == "S") { echo " checked"; } ?>> Sim
+                    </label>
+                </div>
             </div>
         </div>
-    </div>
-	
-    <div class="form-group form-group-sm">
-        <div class="col-sm-offset-3 col-sm-9">
-            <button type="submit" class="btn btn-primary">Salvar</button>
+
+        <div class="form-group form-group-sm">
+            <div class="col-sm-offset-3 col-sm-9">
+                <span class="text-muted">Já trabalhou na Linde Vidros?</span>
+            </div>
         </div>
-    </div>
-    </fieldset>
-</form>
+        <div class="form-group form-group-sm">
+            <label for="radioexFuncionario" class="col-sm-3 control-label">Ex-Funcionário</label>
+            <div class="col-sm-9">
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="exfuncionario" value="N"<?php if ($exfuncionarioUsuario == "N") { echo " checked"; } ?>> Não
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="exfuncionario" value="S"<?php if ($exfuncionarioUsuario == "S") { echo " checked"; } ?>> Sim
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group form-group-sm">
+            <div class="col-sm-offset-3 col-sm-9">
+                <button type="submit" class="btn btn-primary">Salvar</button>
+            </div>
+        </div>
+        </fieldset>
+    </form>
+
+    <?php
+}
+?>
 
 </div>
 </div>

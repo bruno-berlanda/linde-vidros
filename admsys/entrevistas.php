@@ -114,7 +114,7 @@ while ($linha = mysqli_fetch_array($consulta)) {
 	$data 		= $linha['data'];
 	$hora 		= $linha['hora'];
 	$vaga 		= $linha['vaga'];
-	$feedback 	= $linha['feedback'];
+	//$feedback 	= $linha['feedback'];
 	
 	$data = substr($data,8,2) . "/" .substr($data,5,2) . "/" . substr($data,2,2);
 	$hora = substr($hora,0,2) . ":" .substr($hora,3,2);

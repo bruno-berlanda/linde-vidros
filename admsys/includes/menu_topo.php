@@ -83,7 +83,7 @@ $con_promocoes = mysqli_query ($conexao, "SELECT usuario FROM admin_promocoes WH
                     <ul class="dropdown-menu">
                         <?php if ($perm_slides == "S") { ?><li><a href="slides.php">Slides</a></li><?php } ?>
 						<?php if ($perm_contatos == "S") { ?><li><a href="contatos.php">Contatos <?php if ($conta_contatos > 0) { ?><span class="badge"><?php echo $conta_contatos; ?></span><?php } ?></a></li><?php } ?>
-                        <?php if ($perm_comentarios == "S") { ?><li><a href="comentarios.php">Comentários <?php if ($conta_comentarios > 0) { ?><span class="badge"><?php echo $conta_comentarios; ?></span><?php } ?></a></li><?php } ?>
+                        <?php if ($perm_comentarios == "S") { ?><li><a href="comentarios.php">Comentários</a></li><?php } ?>
                         <?php if ($perm_cadastros == "S") { ?><li><a href="cadastros.php">Cadastros</a></li><?php } ?>
                         <?php if ($perm_pesquisa == "S") { ?><li><a href="pesquisa.php">Pesquisa</a></li><?php } ?>
                         <?php if ($perm_tags) { ?><li><a href="tags.php">Tags</a></li><?php } ?>
@@ -102,9 +102,9 @@ $con_promocoes = mysqli_query ($conexao, "SELECT usuario FROM admin_promocoes WH
                         <?php if ($perm_curriculos == "S") { ?><li><a href="curriculos.php">Currículos <?php if ($conta_curriculos > 0) { ?><span class="badge"><?php echo $conta_curriculos; ?></span><?php } ?></a></li><?php } ?>
                         <?php if ($perm_curriculos == "S") { ?><li><a href="entrevistas.php">Entrevistas</a></li><?php } ?>
                         <?php if ($perm_vagas == "S") { ?><li><a href="vagas.php">Vagas</a></li><?php } ?>
-                        <?php if ($perm_curriculos == "S") { ?><li role="separator" class="divider"></li><?php } ?>
-                        <?php if ($perm_curriculos == "S") { ?><li><a href="curriculos_pesquisar_termo.php">Pesquisar Termo</a></li><?php } ?>
-                        <?php if ($perm_curriculos == "S") { ?><li><a href="curriculos_pesquisar_setor.php">Pesquisar Setor</a></li><?php } ?>
+                        <?php if ($perm_curriculos == "D") { ?><li role="separator" class="divider"></li><?php } ?>
+                        <?php if ($perm_curriculos == "D") { ?><li><a href="curriculos_pesquisar_termo.php">Pesquisar Termo</a></li><?php } ?>
+                        <?php if ($perm_curriculos == "D") { ?><li><a href="curriculos_pesquisar_setor.php">Pesquisar Setor</a></li><?php } ?>
                     </ul>
                 </li>
                 <?php

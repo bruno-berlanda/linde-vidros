@@ -2,7 +2,7 @@
 Arquivos Javascript
 --------------------------------------------------------------------------------------------------------------------------------------------- -->
 <script src="../js/jquery.mask.min.js"></script>
-<script src="../js/bootstrap.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 
 <!-- Shadowbox -->
 <script type="text/javascript" src="../js/shadowbox/shadowbox.js"></script>
