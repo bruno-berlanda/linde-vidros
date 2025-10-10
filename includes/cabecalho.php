@@ -33,7 +33,6 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css?<?php echo filemtime('css/bootstrap.min.css'); ?>">
-    <link rel="stylesheet" href="css/navbar.min.css?<?php echo filemtime('css/navbar.min.css'); ?>">
     <link rel="stylesheet" href="css/linde.css?<?php echo filemtime('css/linde.css'); ?>">
     <link rel="stylesheet" href="css/fontawesome-all.min.css?<?php echo filemtime('css/fontawesome-all.min.css'); ?>">
     
