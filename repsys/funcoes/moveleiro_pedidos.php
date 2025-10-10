@@ -21,7 +21,7 @@ $transporte 	= strip_tags(trim($_POST['transporte']));
 $frete 			= strip_tags(trim($_POST['frete']));
 
 $pedido_id 		= strtr(strtoupper($pedido_id),"àáâãäåæçèéêëìíîïðñòóôõö÷øùüúþÿ","ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÜÚÞß");
-$forma_pgto 	= strtr(strtoupper($forma_pgto),"àáâãäåæçèéêëìíîïðñòóôõö÷øùüúþÿ","ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÜÚÞß");
+//$forma_pgto 	= strtr(strtoupper($forma_pgto),"àáâãäåæçèéêëìíîïðñòóôõö÷øùüúþÿ","ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÜÚÞß");
 
 /* ***** */
 
