@@ -23,7 +23,7 @@
                 <li class="dropdown">
                 	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Materiais <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <?php if ($p_tabelas == "S") { ?><li><a href="tabelas.php">Tabelas</a></li><?php } ?>
+                        <?php if ($p_tabelas == "D") { ?><li><a href="tabelas.php">Tabelas</a></li><?php } ?>
 						<?php if ($p_materiais == "S") { ?><li><a href="divulgacao.php">Divulgação</a></li><?php } ?>
                         <?php if ($p_procedimentos == "S") { ?><li><a href="procedimentos.php">Procedimentos</a></li><?php } ?>
                         <?php if ($p_normas == "S") { ?><li><a href="normas.php">Normas</a></li><?php } ?>
