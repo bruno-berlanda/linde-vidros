@@ -56,14 +56,14 @@ require_once ("includes/links.php");
 	<div class="row mt-4">
         <div class="col-md-12">
             <div class="row">
-                <div class="col-6">
-                    <div class="border rounded p-3 text-center">
+                <div class="col-12 col-sm-6">
+                    <div class="border rounded p-3 text-center mb-1">
                         <small class="text-secondary"><i class="fa-solid fa-phone fa-fw"></i> TELEFONE</small>
                         <p class="lead mt-2"><a href="https://api.whatsapp.com/send?phone=554736414444" class="link-underline link-underline-opacity-0">47 3641 4444</a></p>
                     </div>
                 </div>
-                <div class="col-6">
-                    <div class="border rounded p-3 text-center">
+                <div class="col-12 col-sm-6">
+                    <div class="border rounded p-3 text-center mb-1">
                         <small class="text-secondary"><i class="fa-solid fa-envelope fa-fw"></i> E-MAIL</small>
                         <p class="lead mt-2"><a href="mailto:linde@lindevidros.com.br" class="link-underline link-underline-opacity-0">linde@lindevidros.com.br</a></p>
                     </div>

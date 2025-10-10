@@ -29,6 +29,9 @@ body { font-family: 'Ropa Sans', sans-serif; font-size: 1.06rem; }
 
 #navbar-menu-principal .dropdown-item:hover { background-color: #0b355d; color: #FFF; }
 
+.navbar-toggler { background-color: var(--color-azul-linde); border: none; }
+.navbar-toggler-icon { background-color: var(--color-azul-linde); }
+
 .text-justify { text-indent: 2rem; text-align: justify; }
 
 .text-muted-50 { color: #BBB; }

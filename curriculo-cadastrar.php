@@ -93,7 +93,7 @@ require_once ("includes/links.php");
     <?php /* ****************************************************************************************************************************************************************** */ ?>
     
     <div class="row my-4">
-        <div class="col-12 col-md-4">
+        <div class="col-12 col-md-4 mb-4">
         	<form method="post" action="funcoes/cadastro_usuario.php" class="form-horizontal">
                 <fieldset>
                     <legend>Faça seu Cadastro</legend>
