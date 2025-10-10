@@ -56,17 +56,6 @@ require_once ("includes/links.php");
     <div class="row my-4">
         <div class="col-12 col-sm-4">
             <div class="card mb-3">
-                <img src="img/pe_pelicula.jpg" class="card-img-top" alt="Película de Segurança">
-                <div class="card-body">
-                    <p class="h5 mb-3">Película de Segurança</p>
-                    <a href="<?php echo $l_pelicula; ?>" title="Película de Segurança" class="btn btn-primary btn-sm d-block">
-                        <i class="fa-solid fa-link fa-fw"></i> Detalhes
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-sm-4">
-            <div class="card mb-3">
                 <img src="img/pe_serigrafia.jpg" class="card-img-top" alt="Serigrafia">
                 <div class="card-body">
                     <p class="h5 mb-3">Serigrafia</p>

@@ -1,7 +1,4 @@
 <div class="list-group visible-md visible-lg">
-    <a href="<?php echo $l_pelicula; ?>" title="Película de Segurança" class="list-group-item<?php if ($submenu_id == "S-PS") { echo " active"; } ?>">
-    	<i class="fa-solid fa-angle-right fa-fw fa-sm text-primary me-2"></i> Película de Segurança
-    </a>
     <a href="<?php echo $l_serigrafia; ?>" title="Serigrafia" class="list-group-item<?php if ($submenu_id == "S-SR") { echo " active"; } ?>">
     	<i class="fa-solid fa-angle-right fa-fw fa-sm text-primary me-2"></i> Serigrafia
     </a>
