@@ -94,18 +94,6 @@ require_once ("includes/links.php");
                 </div>
             </div>
             
-            <h3>Squadriglass</h3>
-            
-            <p class="text-justify">O vidro <strong>Squadriglass</strong> vem para sofisticar o seu ambiente, dando privacidade e beleza em projetos residenciais e comerciais. Sua textura é recheada de pequenos retângulos, garantindo luminosidade, e combinando com qualquer ambiente.</p>
-            
-            <div class="row">
-                <div class="col-4 col-md-3 mb-2">
-                    <a href="img/produtos/grande/texturizado_squadriglass1.jpg" rel="shadowbox[vocation]" title="Vidro Squadriglass">
-                        <img src="img/produtos/miniatura/texturizado_squadriglass1.jpg" alt="Vidro Squadriglass" class="img-fluid img-thumbnail">
-                    </a>
-                </div>
-            </div>
-            
             <h3>Mini Boreal</h3>
             
             <p class="text-justify">Muito conhecido no Brasil, este vidro apresenta uma textura suave, feita com micro quadrados e gravação regular. Com luminosidade e translucidez uniformes, o vidro <strong>Mini Boreal</strong> é especificado com frequência em diferentes projetos acrescentando beleza e conforto aos ambientes.</p>
