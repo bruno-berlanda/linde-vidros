@@ -5,7 +5,7 @@ legend { color: #999; }
 
 .well { box-shadow: none; }
 
-#conteudo { margin-top: 50px; }
+#conteudo { margin-top: -20px; }
 
 /* Titulo */
 #titulo { background-color: #18bc9c; padding: 10px 0 20px 0; border-bottom: 3px solid #13987e; margin-bottom: 30px; }
