@@ -73,7 +73,7 @@ else {
                     <div class="col-sm-offset-2 col-sm-8">
                         <div class="input-group">
                             <span class="input-group-addon"><i class="fas fa-lock"></i></span>
-                            <input type="password" name="senha_repsys" class="form-control input-lg" id="inputSenha" maxlength="6" required>
+                            <input type="password" name="senha_repsys" class="form-control input-lg" id="inputSenha" maxlength="10" required>
                         </div>
                     </div>
                 </div>

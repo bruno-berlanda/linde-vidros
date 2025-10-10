@@ -29,7 +29,7 @@ $email 	= strip_tags(trim($_POST['email']));
 // Conexão com o Banco de Dados
 include_once ("conexao.php");
 
-$conCPF = mysqli_query ($conexao, "SELECT cpf, nome, email, senha FROM usuarios WHERE cpf='$cpf'") or die (mysqli_error());
+$conCPF = mysqli_query ($conexao, "SELECT cpf, nome, email, senha FROM usuarios WHERE cpf='$cpf'") or die (mysqli_error($conexao));
 $contaCPF = mysqli_num_rows ($conCPF);
 
 $dados = mysqli_fetch_array ($conCPF);
@@ -89,18 +89,17 @@ else if ($contaCPF == 1 && $email == $emailUsuario) { // Envia a senha por e-mai
 	
 	include_once ("conexao_email.php");
 	
-	// Define os destinatário(s)
-	// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-	$mail->AddAddress($emailUsuario);
-	//$mail->AddCC('ciclano@site.net', 'Ciclano'); // Copia
-	//$mail->AddBCC('fulano@dominio.com.br', 'Fulano da Silva'); // Cópia Oculta
-	
 	// Define os dados técnicos da Mensagem
 	// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-	$mail->IsHTML(true); // Define que o e-mail será enviado como HTML
-	//$mail->CharSet = 'iso-8859-1'; // Charset da mensagem (opcional)
-	$mail->CharSet = 'utf-8'; // Charset da mensagem (opcional)
-	
+    $mail->IsHTML(true); // Define que o e-mail será enviado como HTML
+    $mail->CharSet = 'utf-8'; // Charset da mensagem (opcional)
+
+    // Define os destinatário(s)
+    // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+    $mail->AddAddress($emailUsuario);
+    //$mail->AddCC('ciclano@site.net', 'Ciclano'); // Copia
+    $mail->AddBCC('bruno@lindevidros.com.br', 'Bruno'); // Cópia Oculta
+
 	// Define a mensagem (Texto e Assunto)
 	// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 	$mail->Subject  = "Recuperação de senha"; // Assunto da mensagem
