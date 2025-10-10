@@ -13,7 +13,7 @@
                         	<li><a href="<?php echo $l_engenharia; ?>" title="Engenharia">Engenharia</a></li>
                             <li><a href="<?php echo $l_moveleiro; ?>" title="Moveleiro">Moveleiro</a></li>
                             <li><a href="<?php echo $l_refrigeracao; ?>" title="Linha Refrigeração">Linha Refrigeração</a></li>
-                            <li><a href="<?php echo $l_acessorios; ?>" title="Acessórios">Acessórios</a></li>
+                            <li><a href="<?php echo $l_servicos; ?>" title="Acessórios">Serviços</a></li>
                         </ul>
                         
                         <br>
