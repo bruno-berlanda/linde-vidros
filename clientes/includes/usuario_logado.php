@@ -55,16 +55,16 @@ $consulta = mysqli_query ($conexao, "SELECT * FROM clientes WHERE cnpj='$login_u
 		$contato1Usuario 		= $infos['contato1'];
 		$foneb1Usuario 			= $infos['fone1'];
 		$bem1Usuario 			= $infos['bem1'];
-		$valorb1Usuario 		= $infos['valor1'];
+		$valorb1Usuario 		= $infos['valorb1'];
 		$ano1Usuario 			= $infos['ano1'];
 		$bem2Usuario 			= $infos['bem2'];
-		$valorb2Usuario 		= $infos['valor2'];
+		$valorb2Usuario 		= $infos['valorb2'];
 		$ano2Usuario 			= $infos['ano2'];
         $bem3Usuario 			= $infos['bem3'];
-		$valorb3Usuario 		= $infos['valor3'];
+		$valorb3Usuario 		= $infos['valorb3'];
 		$ano3Usuario 			= $infos['ano3'];
         $bem4Usuario 			= $infos['bem4'];
-		$valorb4Usuario 		= $infos['valor4'];
+		$valorb4Usuario 		= $infos['valorb4'];
 		$ano4Usuario 			= $infos['ano4'];
 		
 		$wkUsuario 				= $infos['wk'];

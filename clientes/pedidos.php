@@ -84,17 +84,17 @@ if ($wkUsuario == "S") {
                     
                     <div class="form-group form-group-sm">
                     	<label for="inputDataInicial">Data Inicial</label>
-                    	<input type="date" name="data_inicial" class="form-control" id="inputDataInicial" required value="<?php echo $_POST['data_inicial']; ?>">
+                    	<input type="date" name="data_inicial" class="form-control" id="inputDataInicial" required value="<?php echo $_POST['data_inicial'] ?? ''; ?>">
                     </div>
                     <div class="form-group form-group-sm">
                     	<label for="inputDataFinal">Data Final</label>
-                    	<input type="date" name="data_final" class="form-control" id="inputDataFinal" max="<?php echo date("Y-m-d"); ?>" required value="<?php echo $_POST['data_final']; ?>">
+                    	<input type="date" name="data_final" class="form-control" id="inputDataFinal" max="<?php echo date("Y-m-d"); ?>" required value="<?php echo $_POST['data_final'] ?? ''; ?>">
                     </div>
                     <div class="form-group form-group-sm">
                     	<label for="selectSituacao">Situação</label>
                     	<select name="situacao" class="form-control" id="selectSituacao" required>
-                        	<option value="Pendente"<?php if ($_POST['situacao'] == "Pendente" || !isset($_POST['situacao'])) { echo " selected"; }; ?>>Pendente</option>
-                            <option value="Entregue"<?php if ($_POST['situacao'] == "Entregue") { echo " selected"; }; ?>>Entregue</option>
+                        	<option value="Pendente"<?php if (isset($_POST['situacao']) && $_POST['situacao'] == "Pendente") { echo " selected"; }; ?>>Pendente</option>
+                            <option value="Entregue"<?php if (isset($_POST['situacao']) && $_POST['situacao'] == "Entregue") { echo " selected"; }; ?>>Entregue</option>
                         </select>
                     </div>
                 	

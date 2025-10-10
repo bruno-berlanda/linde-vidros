@@ -39,7 +39,7 @@ include_once ("includes/cabecalho.php");
                     <p class="text-muted"><small>CADASTRADO EM: <?php echo $criadoUsuario; ?></small></p>
                 </div>
                 <div class="col-md-8">
-                    <?php if ($vendedorUsuario != "") { ?><p class="text-muted"><small>VENDEDOR: <?php echo $vendedorUsuario; ?></small></p><?php } ?>
+                    <p class="text-muted"><small>VENDEDOR: <?php echo $vendedorUsuario ?? ''; ?></small></p>
                 </div>
             </div>
             
