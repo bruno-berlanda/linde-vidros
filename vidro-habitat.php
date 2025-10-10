@@ -125,11 +125,6 @@ require_once ("includes/links.php");
                             <td>3+3, 4+4, 4+6, 6+6</td>
                         </tr>
                         <tr>
-                            <td>Azul</td>
-                            <td>4, 6, 8, 10</td>
-                            <td>3+3, 4+4, 4+6, 6+6</td>
-                        </tr>
-                        <tr>
                             <td>Esmeralda</td>
                             <td>4, 6, 8, 10</td>
                             <td>3+3, 4+4, 4+6, 6+6</td>
@@ -146,45 +141,35 @@ require_once ("includes/links.php");
                     
                     <table class="table table-bordered">
                         <tr>
-                            <td rowspan="2">Características da Linha Habitat Refletiva</td>
-                            <td colspan="4" class="text-center"><strong>HABITAT</strong></td>
-                            <td class="text-center">Vidro Comum</td>
+                            <td class="text-body-tertiary">Características</td>
+                            <td width="18%" class="text-center">Cinza</td>
+                            <td width="18%" class="text-center">Esmeralda</td>
+                            <td width="18%" class="text-center">Champanhe</td>
+                            <td width="18%" class="text-center bg-light text-secondary">Vidro Incolor</td>
                         </tr>
                         <tr>
-                            <td width="15%" class="text-center"><strong>Cinza</strong></td>
-                            <td width="15%" class="text-center"><strong>Azul</strong></td>
-                            <td width="15%" class="text-center"><strong>Esmeralda</strong></td>
-                            <td width="15%" class="text-center"><strong>Champanhe</strong></td>
-                            <td width="15%" class="text-center">Incolor</td>
-                        </tr>
-                        <tr>
-                            <td>Proteção de Calor</td>
+                            <td class="text-muted">Proteção de Calor</td>
                             <td class="text-center">71%</td>
-                            <td class="text-center">68%</td>
-                            <td class="text-center">65%</td>
+                            <td class="text-center">66%</td>
                             <td class="text-center">50%</td>
-                            <td class="text-center">15%</td>
+                            <td class="text-center bg-light text-secondary">15%</td>
                         </tr>
                         <tr>
-                            <td>Proteção UV</td>
+                            <td class="text-muted">Proteção UV</td>
                             <td class="text-center">84%</td>
-                            <td class="text-center">86%</td>
                             <td class="text-center">96%</td>
                             <td class="text-center">91%</td>
-                            <td class="text-center"><i class="fas fa-times"></i></td>
+                            <td class="text-center bg-light text-secondary"><i class="fa-solid fa-xmark"></i></td>
                         </tr>
                         <tr>
-                            <td>Economia de Energia</td>
-                            <td class="text-center"><i class="fas fa-bolt"></i> <i class="fas fa-bolt"></i> <i class="fas fa-bolt"></i> <i class="fas fa-bolt"></i></td>
-                            <td class="text-center"><i class="fas fa-bolt"></i> <i class="fas fa-bolt"></i> <i class="fas fa-bolt"></i> <i class="fas fa-bolt"></i></td>
-                            <td class="text-center"><i class="fas fa-bolt"></i> <i class="fas fa-bolt"></i> <i class="fas fa-bolt"></i></td>
-                            <td class="text-center"><i class="fas fa-bolt"></i> <i class="fas fa-bolt"></i></td>
-                            <td class="text-center"><i class="fas fa-times"></i></td>
+                            <td class="text-muted">Proteção UV</td>
+                            <td class="text-center"><i class="fa-solid fa-dollar-sign"></i><i class="fa-solid fa-dollar-sign"></i></td>
+                            <td class="text-center"><i class="fa-solid fa-dollar-sign"></i><i class="fa-solid fa-dollar-sign"></i></td>
+                            <td class="text-center"><i class="fa-solid fa-dollar-sign"></i></td>
+                            <td class="text-center bg-light text-secondary"><i class="fa-solid fa-xmark"></i></td>
                         </tr>
                     </table>
                 </div>
-
-                <hr>
                 
                 <div class="col-12">
                 	<h3>Vidro Habitat Neutro</h3>
@@ -203,12 +188,17 @@ require_once ("includes/links.php");
                         </thead>
                         <tbody>
                         <tr>
-                            <td>Incolor</td>
+                            <td>Cinza</td>
                             <td>4, 6, 8, 10</td>
                             <td>3+3, 4+4, 4+6, 6+6</td>
                         </tr>
                         <tr>
-                            <td>Cinza</td>
+                            <td>Cinza Claro</td>
+                            <td>4, 6, 8, 10</td>
+                            <td>3+3, 4+4, 4+6, 6+6</td>
+                        </tr>
+                        <tr>
+                            <td>Incolor</td>
                             <td>4, 6, 8, 10</td>
                             <td>3+3, 4+4, 4+6, 6+6</td>
                         </tr>
@@ -219,32 +209,32 @@ require_once ("includes/links.php");
 
                     <table class="table table-bordered">
                         <tr>
-                            <td rowspan="2">Características da Linha Habitat Neutra</td>
-                            <td colspan="2" class="text-center"><strong>HABITAT</strong></td>
-                            <td class="text-center">Vidro Comum</td>
+                            <td class="text-body-tertiary">Características</td>
+                            <td width="18%" class="text-center">Cinza</td>
+                            <td width="18%" class="text-center">Cinza Claro</td>
+                            <td width="18%" class="text-center">Incolor</td>
+                            <td width="18%" class="text-center bg-light text-secondary">Vidro Incolor</td>
                         </tr>
                         <tr>
-                            <td width="15%" class="text-center"><strong>Incolor</strong></td>
-                            <td width="15%" class="text-center"><strong>Cinza</strong></td>
-                            <td width="15%" class="text-center">Incolor</td>
-                        </tr>
-                        <tr>
-                            <td>Proteção de Calor</td>
-                            <td class="text-center">32%</td>
+                            <td class="text-muted">Proteção de Calor</td>
                             <td class="text-center">45%</td>
-                            <td class="text-center">15%</td>
+                            <td class="text-center">39%</td>
+                            <td class="text-center">32%</td>
+                            <td class="text-center bg-light text-secondary">15%</td>
                         </tr>
                         <tr>
-                            <td>Proteção UV</td>
-                            <td class="text-center">57%</td>
+                            <td class="text-muted">Proteção UV</td>
                             <td class="text-center">67%</td>
-                            <td class="text-center"><i class="fas fa-times"></i></td>
+                            <td class="text-center">60%</td>
+                            <td class="text-center">57%</td>
+                            <td class="text-center bg-light text-secondary"><i class="fa-solid fa-xmark"></i></td>
                         </tr>
                         <tr>
-                            <td>Economia de Energia</td>
-                            <td class="text-center"><i class="fas fa-bolt"></i></td>
-                            <td class="text-center"><i class="fas fa-bolt"></i> <i class="fas fa-bolt"></i></td>
-                            <td class="text-center"><i class="fas fa-times"></i></td>
+                            <td class="text-muted">Proteção UV</td>
+                            <td class="text-center"><i class="fa-solid fa-dollar-sign"></i><i class="fa-solid fa-dollar-sign"></i></td>
+                            <td class="text-center"><i class="fa-solid fa-dollar-sign"></i><i class="fa-solid fa-dollar-sign"></i></td>
+                            <td class="text-center"><i class="fa-solid fa-dollar-sign"></i></td>
+                            <td class="text-center bg-light text-secondary"><i class="fa-solid fa-xmark"></i></td>
                         </tr>
                     </table>
                 </div>

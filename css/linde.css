@@ -1,6 +1,8 @@
 :root {
     --color-azul-linde: #1469B8;
     --color-azul-escuro: #0b355d;
+
+    --color-laranja-habitat: #f5872d;
 }
 
 body { font-family: 'Ropa Sans', sans-serif; font-size: 1.06rem; }
@@ -11,12 +13,18 @@ body { font-family: 'Ropa Sans', sans-serif; font-size: 1.06rem; }
 .bg-azul-escuro {
     background-color: var(--color-azul-escuro);
 }
+.bg-laranja-habitat {
+    background-color: var(--color-laranja-habitat);
+}
 
 .text-azul-linde {
     color: var(--color-azul-linde);
 }
 .text-azul-escuro {
     color: var(--color-azul-escuro);
+}
+.text-laranja-habitat {
+    color: var(--color-laranja-habitat);
 }
 
 /* TOPO */
