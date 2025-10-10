@@ -2,7 +2,7 @@
 Arquivos Javascript
 --------------------------------------------------------------------------------------------------------------------------------------------- -->
 <script src="../js/jquery.mask.min.js"></script>
-<script src="../js/bootstrap.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 
 <!-- Tail Select -->
 <script src="js/tail.select-full.min.js?<?php echo filemtime('js/tail.select-full.min.js'); ?>"></script>

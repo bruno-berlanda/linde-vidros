@@ -146,7 +146,10 @@ $conta_itens = mysqli_num_rows ($consulta_itens);
     </tr>
     <?php
 	$i = 1;
-	
+
+    $total_pedido = 0;
+    $total_pedido_ipi = 0;
+
 	while ($dados_itens = mysqli_fetch_array ($consulta_itens)) {
 		$item_codigo		= $dados_itens['codigo'];
 		$item_qtde 			= $dados_itens['qtde'];

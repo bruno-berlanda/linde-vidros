@@ -13,7 +13,7 @@
         <div class="form-group form-group-sm">
             <label for="selectCliente" class="col-sm-3 control-label">Cliente</label>
             <div class="col-sm-4">
-                <input type="text" name="filtro_cliente" class="form-control" value="<?php echo $_GET['filtro_cliente']; ?>">
+                <input type="text" name="filtro_cliente" class="form-control" value="<?php echo $_GET['filtro_cliente'] ?? ''; ?>">
             </div>
         </div>
         <div class="form-group form-group-sm">

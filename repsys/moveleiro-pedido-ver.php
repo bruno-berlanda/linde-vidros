@@ -189,6 +189,7 @@ else {
 $i = 1;
 
 $total_pedido = 0;
+$total_pedido_ipi = 0;
 
 while ($dados_itens = mysqli_fetch_array ($consulta_itens)) {
     $item_codigo		= $dados_itens['codigo'];

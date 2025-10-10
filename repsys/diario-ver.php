@@ -205,7 +205,7 @@ $con_cliente = mysqli_query ($conexao, "SELECT * FROM geral_clientes WHERE id='$
 	
 		$data 			= date('d/m/Y H:i', strtotime($d_data));
 		$data_visita 	= date('d/m/Y', strtotime($d_data_visita));
-		$data_retorno 	= date('d/m/Y', strtotime($d_ret_data));
+		//$data_retorno 	= date('d/m/Y', strtotime($d_ret_data));
 		
 		switch ($d_tipo) {
 			case "E";

@@ -421,7 +421,7 @@ else {
 		?>
         <tr<?php if ($d_alerta == "S") { echo " class=\"text-warning\""; } ?>>
         	<td>
-                <a href="diario-ver.php?c=<?php echo $d_codigo; ?>&di=<?php echo (isset($_GET['data_inicial'])) ? $_GET['data_inicial'] : ""; ?>&df=<?php echo (isset($_GET['data_final'])) ? $_GET['data_final'] : ""; ?>&re=<?php echo (isset($_GET['representante'])) ? $_GET['representante'] : ""; ?>&cl=<?php echo (isset($_GET['cliente'])) ? $_GET['cliente'] : ""; ?>&st=<?php echo (isset($_GET['status'])) ? $_GET['status'] : ""; ?>" class="btn btn-primary btn-xs btn-block">
+                <a href="diario-ver.php?c=<?php echo $d_codigo; ?>&di=<?php echo $_GET['data_inicial'] ?? ''; ?>&df=<?php echo $_GET['data_final'] ?? ''; ?>&re=<?php echo $_GET['representante'] ?? ''; ?>&cl=<?php echo $_GET['cliente'] ?? ''; ?>&st=<?php echo $_GET['status'] ?? ''; ?>" class="btn btn-primary btn-xs btn-block">
                 	<i class="fas fa-search"></i>
                 </a>
             </td>
